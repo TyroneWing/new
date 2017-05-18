@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+#use_frameworks!个别需要用到它，比如reactiveCocoa
+
+target 'EasyCommision' do
+  pod 'MJExtension'
+  pod 'AFNetworking', '3.0.4'
+end

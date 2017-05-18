@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderPaySuccessViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_is_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xfh-fK-wSa">
+                    <rect key="frame" x="131.5" y="46" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="1ab-pA-R6L"/>
+                        <constraint firstAttribute="width" constant="16" id="fja-4s-Kxf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单支付成功!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w36-RB-wOB">
+                    <rect key="frame" x="157.5" y="43" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CvY-r0-6l6"/>
+                        <constraint firstAttribute="width" constant="120" id="qMF-I9-Jvk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以在会员中心进行查看订单等操作！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaJ-4W-IVv">
+                    <rect key="frame" x="15" y="79" width="345" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="u6m-o0-Muo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F17-ya-2c2">
+                    <rect key="frame" x="15" y="135" width="345" height="40"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.65490196078431373" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1rK-cB-Bgu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="查看我的订单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zy_cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S02-bJ-An3">
+                    <rect key="frame" x="15" y="195" width="345" height="40"/>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B1S-RO-qwT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="返回会员中心">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zy_cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-6h-n2n">
+                    <rect key="frame" x="15" y="255" width="345" height="40"/>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Leu-jc-IYw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="返回首页">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="zy_cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UaJ-4W-IVv" secondAttribute="trailing" constant="15" id="3rC-ff-Ug0"/>
+                <constraint firstItem="UaJ-4W-IVv" firstAttribute="top" secondItem="w36-RB-wOB" secondAttribute="bottom" constant="15" id="4MF-Cq-9hS"/>
+                <constraint firstItem="F17-ya-2c2" firstAttribute="top" secondItem="UaJ-4W-IVv" secondAttribute="bottom" constant="35" id="4nt-AW-iZ8"/>
+                <constraint firstItem="w36-RB-wOB" firstAttribute="centerY" secondItem="Xfh-fK-wSa" secondAttribute="centerY" id="52j-dv-NT2"/>
+                <constraint firstItem="w36-RB-wOB" firstAttribute="leading" secondItem="Xfh-fK-wSa" secondAttribute="trailing" constant="10" id="568-fe-ORS"/>
+                <constraint firstItem="S02-bJ-An3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="9MD-bE-OaP"/>
+                <constraint firstAttribute="trailing" secondItem="NQX-6h-n2n" secondAttribute="trailing" constant="15" id="TPi-dy-xNw"/>
+                <constraint firstAttribute="trailing" secondItem="S02-bJ-An3" secondAttribute="trailing" constant="15" id="X70-z0-s1q"/>
+                <constraint firstItem="S02-bJ-An3" firstAttribute="top" secondItem="F17-ya-2c2" secondAttribute="bottom" constant="20" id="YRZ-qz-6SR"/>
+                <constraint firstAttribute="trailing" secondItem="F17-ya-2c2" secondAttribute="trailing" constant="15" id="jnR-dn-Qsa"/>
+                <constraint firstItem="UaJ-4W-IVv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="k9c-X2-s4I"/>
+                <constraint firstItem="w36-RB-wOB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="30" id="lix-Dd-Qak"/>
+                <constraint firstItem="w36-RB-wOB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="43" id="o40-5c-Msr"/>
+                <constraint firstItem="F17-ya-2c2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="o55-Ca-hVy"/>
+                <constraint firstItem="NQX-6h-n2n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="pXv-qM-MyS"/>
+                <constraint firstItem="NQX-6h-n2n" firstAttribute="top" secondItem="S02-bJ-An3" secondAttribute="bottom" constant="20" id="uWf-NG-pR4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_is_icon.png" width="33" height="33"/>
+    </resources>
+</document>
