@@ -47,8 +47,8 @@
 - (void)createTabBarVC
 {
     NSArray *titleArray = @[@"首页",@"商城",@"订单",@"我的"];
-    NSArray *imageArray = @[@"home_g1",@"main_g2",@"main_g3",@"main_g4"];
-    NSArray *imageSelectArray = @[@"home_rd",@"main_r2",@"main_r3",@"main_r4"];
+    NSArray *imageArray = @[@"home_g1.png",@"main_g2.png",@"main_g3.png",@"main_g4.png"];
+    NSArray *imageSelectArray = @[@"home_rd.png",@"main_r2.png",@"main_r3.png",@"main_r4.png"];
 
     BaseTabBarViewController *baseTarbarVC  = [[BaseTabBarViewController alloc] init];
     baseTarbarVC.tabBar.tintColor = RGB(220, 0, 22);

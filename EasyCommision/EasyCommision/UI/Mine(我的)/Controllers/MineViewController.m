@@ -12,6 +12,8 @@
 
 //test
 #import "MyMessageViewController.h"
+#import "AddressListViewController.h"
+
 
 @interface MineViewController ()
 
@@ -31,9 +33,10 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    MyMessageViewController *mymessageVC = [[MyMessageViewController alloc] init];
-    mymessageVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:mymessageVC animated:YES];
+    //MyMessageViewController *vc = [[MyMessageViewController alloc] init];
+    AddressListViewController *vc = [[AddressListViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

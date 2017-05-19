@@ -20,7 +20,7 @@
 
 #define RedBackColor [UIColor colorWithRed:219/255.0 green:0/255.0 blue:17/255.0 alpha:1.0]
 #define TextNomalColor [UIColor colorWithRed:28/255.0 green:28/255.0 blue:28/255.0 alpha:1.0]
-
+#define backgroudColor [UIColor colorWithRed:241/255.0 green:242/255.0 blue:244/255.0 alpha:1.0]
 
 //公网host
 #define URL_HEAD @"http://test.com"

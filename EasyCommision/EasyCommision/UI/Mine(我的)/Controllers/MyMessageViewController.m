@@ -26,10 +26,8 @@
     
     
     self.navigationItem.title = @"我的消息";
-    
     [self.view addSubview:self.myMessageTableView];
 
-    
 }
 
 
