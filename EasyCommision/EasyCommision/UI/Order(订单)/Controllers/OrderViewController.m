@@ -2,14 +2,34 @@
 //  OrderViewController.m
 //  EasyCommision
 //
-//  Created by yi on 17/5/17.
+//  Created by yi on 17/5/19.
 //  Copyright © 2017年 yi. All rights reserved.
 //
 
 #import "OrderViewController.h"
 #import "Networks.h"
+#import "monthlyOrderCell.h"
+#import "hourlyOrderCell.h"
+#import "shopOrderCell.h"
 
-@interface OrderViewController ()
+typedef enum : NSUInteger {
+    orderMonthly,//住家工
+    orderhourly,//钟点工
+    orderShop,//商品
+} Order;
+
+@interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) UITableView *orderTableView;
+
+@property (nonatomic,strong) NSMutableArray *monthlyOrderArray;
+@property (nonatomic,strong) NSMutableArray *hourlyOrderArray;
+@property (nonatomic,strong) NSMutableArray *shopOrderArray;
+
+@property (weak, nonatomic) IBOutlet UIButton *monthlyOrderBtn;//住家工订单
+@property (weak, nonatomic) IBOutlet UIButton *hourlyOrderBtn;//钟点工订单
+@property (weak, nonatomic) IBOutlet UIButton *shopOrderBtn;//商品订单
+
+@property (assign,nonatomic) Order orderType;
 
 @end
 
@@ -17,11 +37,124 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
     
     [self settingNavigationbar];
+    self.orderType = orderMonthly;
+    
+    [self dataTest];
+    
+    [self.view addSubview:self.orderTableView];
+    
+}
+
+
+/**
+ 模拟数据
+ */
+- (void)dataTest
+{
+    for (int i = 0; i<6; i++) {
+        [self.monthlyOrderArray addObject:@1];
+    }
+    for (int i = 0; i<3; i++) {
+        [self.hourlyOrderArray addObject:@1];
+    }
+    for (int i = 0; i<10; i++) {
+        [self.shopOrderArray addObject:@1];
+    }
+}
+
+#pragma mark - TableView
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (self.orderType == orderMonthly) {
+        return self.monthlyOrderArray.count;
+    } else if (self.orderType == orderhourly) {
+        return self.hourlyOrderArray.count;
+    } else {
+        return self.shopOrderArray.count;
+    }
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.orderType == orderMonthly) {
+        monthlyOrderCell *cell = [monthlyOrderCell cellWithTableView:tableView];
+        return cell;
+    } else if (self.orderType == orderhourly) {
+        hourlyOrderCell *cell = [hourlyOrderCell cellWithTableView:tableView];
+        return cell;
+    } else {
+        shopOrderCell *cell = [shopOrderCell cellWithTableView:tableView];
+        return cell;
+    }
+}
+
+
+
+- (UITableView *)orderTableView
+{
+    if (_orderTableView == nil) {
+        _orderTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 41, kWIN_WIDTH, kWIN_HEIGHT-64-49-41) style:UITableViewStylePlain];
+        _orderTableView.backgroundColor = [UIColor whiteColor];
+        _orderTableView.delegate = self;
+        _orderTableView.dataSource = self;
+        _orderTableView.estimatedRowHeight = 120.0;
+        _orderTableView.rowHeight = UITableViewAutomaticDimension;
+        _orderTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        _orderTableView.separatorStyle = NO;
+    }
+    return _orderTableView;
+}
+
+- (NSMutableArray *)monthlyOrderArray
+{
+    if (_monthlyOrderArray == nil) {
+        _monthlyOrderArray = [NSMutableArray array];
+    }
+    return _monthlyOrderArray;
+}
+
+
+- (NSMutableArray *)hourlyOrderArray
+{
+    if (_hourlyOrderArray == nil) {
+        _hourlyOrderArray = [NSMutableArray array];
+    }
+    return _hourlyOrderArray;
+}
+
+- (NSMutableArray *)shopOrderArray
+{
+    if (_shopOrderArray == nil) {
+        _shopOrderArray = [NSMutableArray array];
+    }
+    return _shopOrderArray;
+}
+
+
+- (IBAction)monthlyOrderBtnClick:(UIButton *)sender {
+    self.hourlyOrderBtn.selected = NO;
+    self.shopOrderBtn.selected = NO;
+    sender.selected = YES;
+    self.orderType = orderMonthly;
+    [self.orderTableView reloadData];
+}
+- (IBAction)HourlyOrderBtnClick:(UIButton *)sender {
+    self.monthlyOrderBtn.selected = NO;
+    self.shopOrderBtn.selected = NO;
+    sender.selected = YES;
+    self.orderType = orderhourly;
+    [self.orderTableView reloadData];
+}
+- (IBAction)shopBtnClick:(UIButton *)sender {
+    self.hourlyOrderBtn.selected = NO;
+    self.monthlyOrderBtn.selected = NO;
+    sender.selected = YES;
+    self.orderType = orderShop;
+    [self.orderTableView reloadData];
 }
 
 
@@ -39,11 +172,11 @@
     self.navigationItem.title = @"我的订单";
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 

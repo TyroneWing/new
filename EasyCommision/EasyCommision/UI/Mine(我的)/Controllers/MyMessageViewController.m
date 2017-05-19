@@ -20,20 +20,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    for (int i = 0; i<6; i++) {
-        [self.myMessageArray addObject:@1];
-    }
-    
+
+    [self dataTest];
     
     self.navigationItem.title = @"我的消息";
     [self.view addSubview:self.myMessageTableView];
-
 }
 
 
-
-
-
+/**
+ 模拟数据
+ */
+- (void)dataTest
+{
+    for (int i = 0; i<6; i++) {
+        [self.myMessageArray addObject:@1];
+    }
+}
 
 #pragma mark - TableView
 

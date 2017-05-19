@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderViewController">
+            <connections>
+                <outlet property="hourlyOrderBtn" destination="1yH-k7-Ycn" id="dGd-7t-V8m"/>
+                <outlet property="monthlyOrderBtn" destination="LpZ-Qu-hYd" id="Qvf-Qm-XBM"/>
+                <outlet property="shopOrderBtn" destination="z4S-72-c7a" id="mCa-rL-tsc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpZ-Qu-hYd">
+                    <rect key="frame" x="5" y="0.0" width="118.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rTr-6q-bcs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="住家工订单">
+                        <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="住家工订单">
+                        <color key="titleColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="monthlyOrderBtnClick:" destination="-1" eventType="touchUpInside" id="8vS-dS-9TZ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVP-F8-ZkZ">
+                    <rect key="frame" x="133" y="10" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="RmQ-mD-Qrd"/>
+                        <constraint firstAttribute="height" constant="20" id="pUE-pH-VF9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-k7-Ycn">
+                    <rect key="frame" x="128.5" y="0.0" width="118" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sJP-ZY-V8r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="钟点工订单">
+                        <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="钟点工订单">
+                        <color key="titleColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="HourlyOrderBtnClick:" destination="-1" eventType="touchUpInside" id="TCB-hA-h5P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4S-72-c7a">
+                    <rect key="frame" x="251.5" y="0.0" width="118.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Ago-ig-1UC"/>
+                        <constraint firstAttribute="height" constant="40" id="CIy-xi-WpJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="商品订单">
+                        <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="住家工订单">
+                        <color key="titleColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shopBtnClick:" destination="-1" eventType="touchUpInside" id="4Iu-Jo-Z3W"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsp-0B-l6d">
+                    <rect key="frame" x="246.5" y="10" width="1" height="20"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="38m-Cm-4dW"/>
+                        <constraint firstAttribute="width" constant="1" id="fIL-Hc-bLE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xQ-ys-HH6">
+                    <rect key="frame" x="0.0" y="40" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Kc8-QV-Bmf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0xQ-ys-HH6" firstAttribute="top" secondItem="z4S-72-c7a" secondAttribute="bottom" id="4CG-B0-vOk"/>
+                <constraint firstItem="1yH-k7-Ycn" firstAttribute="width" secondItem="LpZ-Qu-hYd" secondAttribute="width" id="5d6-SH-Mfk"/>
+                <constraint firstItem="iVP-F8-ZkZ" firstAttribute="leading" secondItem="LpZ-Qu-hYd" secondAttribute="trailing" constant="9.5" id="9yf-Py-aVb"/>
+                <constraint firstItem="1yH-k7-Ycn" firstAttribute="leading" secondItem="LpZ-Qu-hYd" secondAttribute="trailing" constant="5" id="FuU-Fp-Q1y"/>
+                <constraint firstItem="z4S-72-c7a" firstAttribute="width" secondItem="LpZ-Qu-hYd" secondAttribute="width" id="HRo-TF-A2j"/>
+                <constraint firstAttribute="trailing" secondItem="0xQ-ys-HH6" secondAttribute="trailing" id="XYV-ia-Sf0"/>
+                <constraint firstItem="z4S-72-c7a" firstAttribute="leading" secondItem="1yH-k7-Ycn" secondAttribute="trailing" constant="5" id="Y25-UI-LRJ"/>
+                <constraint firstItem="iVP-F8-ZkZ" firstAttribute="centerY" secondItem="LpZ-Qu-hYd" secondAttribute="centerY" id="aaz-hH-S9e"/>
+                <constraint firstItem="z4S-72-c7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cNk-eB-MIm"/>
+                <constraint firstItem="dsp-0B-l6d" firstAttribute="centerY" secondItem="1yH-k7-Ycn" secondAttribute="centerY" id="dX7-I5-kZU"/>
+                <constraint firstItem="LpZ-Qu-hYd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jCL-fD-1te"/>
+                <constraint firstItem="0xQ-ys-HH6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lyE-VI-TWz"/>
+                <constraint firstItem="1yH-k7-Ycn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oRU-iw-try"/>
+                <constraint firstItem="LpZ-Qu-hYd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="r7i-ad-QdM"/>
+                <constraint firstAttribute="trailing" secondItem="z4S-72-c7a" secondAttribute="trailing" constant="5" id="vjS-OV-MRA"/>
+                <constraint firstItem="dsp-0B-l6d" firstAttribute="leading" secondItem="1yH-k7-Ycn" secondAttribute="trailing" id="wZt-rI-o73"/>
+            </constraints>
+            <point key="canvasLocation" x="-495" y="100"/>
+        </view>
+    </objects>
+</document>
