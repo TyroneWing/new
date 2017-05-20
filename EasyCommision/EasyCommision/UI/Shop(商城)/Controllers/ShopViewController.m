@@ -227,6 +227,7 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
         headerRV.loopscrollView.pageCount = (int)imageArray.count;
         headerRV.loopscrollView.autoScroll = YES;
         headerRV.loopscrollView.showPageControl = YES;
+        headerRV.loopscrollView.frame = CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5.0);
         [headerRV.loopscrollView setClickAction:^(UIImageView *imageView, int index) {
             
             NSLog(@"点击第%d张图",(int)index);
