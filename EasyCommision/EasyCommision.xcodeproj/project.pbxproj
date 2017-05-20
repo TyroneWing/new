@@ -19,7 +19,6 @@
 		195962721ECBF6BA00962133 /* ZYHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962711ECBF6BA00962133 /* ZYHTTPRequest.m */; };
 		195962931ECBF96500962133 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1959627C1ECBF96500962133 /* BaseTabBarViewController.m */; };
 		195962941ECBF96500962133 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962801ECBF96500962133 /* HomeViewController.m */; };
-		195962971ECBFA6200962133 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962961ECBFA6200962133 /* ShopViewController.m */; };
 		1959629D1ECBFA8600962133 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1959629C1ECBFA8600962133 /* MineViewController.m */; };
 		195962A31ECC010600962133 /* UIColor+HEXString.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962A21ECC010600962133 /* UIColor+HEXString.m */; };
 		1959633C1ECC2F2F00962133 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1959633B1ECC2F2F00962133 /* BaseNavigationViewController.m */; };
@@ -43,6 +42,8 @@
 		199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 199E87051ECD8C12004D8A37 /* MyMessageCell.m */; };
 		199E87081ECD8C12004D8A37 /* MyMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E87061ECD8C12004D8A37 /* MyMessageCell.xib */; };
 		199E870B1ECDA3FF004D8A37 /* AddressListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199E870A1ECDA3FF004D8A37 /* AddressListViewController.m */; };
+		19A2175A1ECFDB2000A5F7F8 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217581ECFDB2000A5F7F8 /* ShopViewController.m */; };
+		19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217591ECFDB2000A5F7F8 /* ShopViewController.xib */; };
 		19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CDFB411ECE943A00232F60 /* AddressCell.m */; };
 		19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19CDFB421ECE943A00232F60 /* AddressCell.xib */; };
 		19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D52C9D1ECEA0F00072EE00 /* MineHeadCell.m */; };
@@ -103,8 +104,6 @@
 		1959627C1ECBF96500962133 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
 		1959627F1ECBF96500962133 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		195962801ECBF96500962133 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		195962951ECBFA6200962133 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
-		195962961ECBFA6200962133 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		1959629B1ECBFA8600962133 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		1959629C1ECBFA8600962133 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		1959629F1ECC007C00962133 /* Networks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networks.h; sourceTree = "<group>"; };
@@ -144,6 +143,9 @@
 		199E87061ECD8C12004D8A37 /* MyMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMessageCell.xib; sourceTree = "<group>"; };
 		199E87091ECDA3FF004D8A37 /* AddressListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListViewController.h; sourceTree = "<group>"; };
 		199E870A1ECDA3FF004D8A37 /* AddressListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListViewController.m; sourceTree = "<group>"; };
+		19A217571ECFDB2000A5F7F8 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
+		19A217581ECFDB2000A5F7F8 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
+		19A217591ECFDB2000A5F7F8 /* ShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
 		19CDFB401ECE943A00232F60 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
 		19CDFB411ECE943A00232F60 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
 		19CDFB421ECE943A00232F60 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
@@ -530,8 +532,9 @@
 		195962901ECBF96500962133 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				195962951ECBFA6200962133 /* ShopViewController.h */,
-				195962961ECBFA6200962133 /* ShopViewController.m */,
+				19A217571ECFDB2000A5F7F8 /* ShopViewController.h */,
+				19A217581ECFDB2000A5F7F8 /* ShopViewController.m */,
+				19A217591ECFDB2000A5F7F8 /* ShopViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				19D52CAA1ECED4040072EE00 /* OrderViewController.xib in Resources */,
 				199E87001ECD8569004D8A37 /* OrderPaySuccessViewController.xib in Resources */,
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
+				19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */,
 				195962391ECBF1FC00962133 /* Assets.xcassets in Resources */,
 				195962371ECBF1FC00962133 /* Main.storyboard in Resources */,
 				19D52CAF1ECEDB760072EE00 /* monthlyOrderCell.xib in Resources */,
@@ -801,7 +805,6 @@
 				1959639A1ECC4CF500962133 /* UIButton+Rect.m in Sources */,
 				199E86F51ECD7896004D8A37 /* ResetPWViewController.m in Sources */,
 				199E87031ECD8875004D8A37 /* MyMessageViewController.m in Sources */,
-				195962971ECBFA6200962133 /* ShopViewController.m in Sources */,
 				199E86F91ECD799F004D8A37 /* ResetPWSuccessView.m in Sources */,
 				19D52CAE1ECEDB760072EE00 /* monthlyOrderCell.m in Sources */,
 				199E86F01ECD74ED004D8A37 /* ForgetPWViewController.m in Sources */,
@@ -823,6 +826,7 @@
 				1959629D1ECBFA8600962133 /* MineViewController.m in Sources */,
 				195962941ECBF96500962133 /* HomeViewController.m in Sources */,
 				1959626D1ECBF67E00962133 /* NSObject+AnalyticalModel.m in Sources */,
+				19A2175A1ECFDB2000A5F7F8 /* ShopViewController.m in Sources */,
 				199E870B1ECDA3FF004D8A37 /* AddressListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

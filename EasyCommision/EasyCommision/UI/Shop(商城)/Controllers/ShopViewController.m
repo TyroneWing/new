@@ -2,7 +2,7 @@
 //  ShopViewController.m
 //  EasyCommision
 //
-//  Created by yi on 17/5/17.
+//  Created by yi on 17/5/20.
 //  Copyright © 2017年 yi. All rights reserved.
 //
 
@@ -11,17 +11,25 @@
 
 @interface ShopViewController ()
 
+@property (weak, nonatomic) IBOutlet UISearchBar *shopSearchBar;
+
 @end
 
 @implementation ShopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
     
+    [self.shopSearchBar setBackgroundImage:[UIImage new]];
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self settingNavigationbar];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 
