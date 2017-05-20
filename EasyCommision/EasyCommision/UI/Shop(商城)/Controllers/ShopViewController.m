@@ -131,14 +131,14 @@ typedef enum : NSUInteger {
 //collectionView代理方法, 控制每个段的边距
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(10, 10, 10, 10);
+    return UIEdgeInsetsMake(10, 15, 10, 15);
 }
 
 //控制每个item的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    CGFloat cellW = (kWIN_WIDTH - 36)/2.0;
+    CGFloat cellW = (kWIN_WIDTH - 46)/2.0;
     CGFloat cellH = cellW /3.0 *2.0 + 80;
 
     return CGSizeMake(cellW, cellH);
