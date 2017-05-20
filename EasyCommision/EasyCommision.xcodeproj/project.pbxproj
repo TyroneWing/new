@@ -44,6 +44,11 @@
 		199E870B1ECDA3FF004D8A37 /* AddressListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199E870A1ECDA3FF004D8A37 /* AddressListViewController.m */; };
 		19A2175A1ECFDB2000A5F7F8 /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217581ECFDB2000A5F7F8 /* ShopViewController.m */; };
 		19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217591ECFDB2000A5F7F8 /* ShopViewController.xib */; };
+		19A2175F1ECFE21B00A5F7F8 /* ShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2175D1ECFE21B00A5F7F8 /* ShopCell.m */; };
+		19A217601ECFE21B00A5F7F8 /* ShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A2175E1ECFE21B00A5F7F8 /* ShopCell.xib */; };
+		19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217621ECFF0B600A5F7F8 /* ShopHeadView.m */; };
+		19A217651ECFF0B600A5F7F8 /* ShopHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217631ECFF0B600A5F7F8 /* ShopHeadView.xib */; };
+		19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217681ECFF54B00A5F7F8 /* LoopScrollView.m */; };
 		19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CDFB411ECE943A00232F60 /* AddressCell.m */; };
 		19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19CDFB421ECE943A00232F60 /* AddressCell.xib */; };
 		19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D52C9D1ECEA0F00072EE00 /* MineHeadCell.m */; };
@@ -146,6 +151,14 @@
 		19A217571ECFDB2000A5F7F8 /* ShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopViewController.h; sourceTree = "<group>"; };
 		19A217581ECFDB2000A5F7F8 /* ShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopViewController.m; sourceTree = "<group>"; };
 		19A217591ECFDB2000A5F7F8 /* ShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		19A2175C1ECFE21B00A5F7F8 /* ShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCell.h; sourceTree = "<group>"; };
+		19A2175D1ECFE21B00A5F7F8 /* ShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCell.m; sourceTree = "<group>"; };
+		19A2175E1ECFE21B00A5F7F8 /* ShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCell.xib; sourceTree = "<group>"; };
+		19A217611ECFF0B600A5F7F8 /* ShopHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopHeadView.h; sourceTree = "<group>"; };
+		19A217621ECFF0B600A5F7F8 /* ShopHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopHeadView.m; sourceTree = "<group>"; };
+		19A217631ECFF0B600A5F7F8 /* ShopHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopHeadView.xib; sourceTree = "<group>"; };
+		19A217671ECFF54B00A5F7F8 /* LoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollView.h; sourceTree = "<group>"; };
+		19A217681ECFF54B00A5F7F8 /* LoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollView.m; sourceTree = "<group>"; };
 		19CDFB401ECE943A00232F60 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
 		19CDFB411ECE943A00232F60 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
 		19CDFB421ECE943A00232F60 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
@@ -291,6 +304,7 @@
 		195962691ECBF5CB00962133 /* ZYTools */ = {
 			isa = PBXGroup;
 			children = (
+				19A217661ECFF54B00A5F7F8 /* ZYLoopScrollView */,
 				195963971ECC4CF500962133 /* UIButton+Rect */,
 				195963931ECC4C8800962133 /* UIView+Extension */,
 				195962A01ECC010600962133 /* UIColor+HEXString */,
@@ -549,6 +563,12 @@
 		195962921ECBF96500962133 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19A2175C1ECFE21B00A5F7F8 /* ShopCell.h */,
+				19A2175D1ECFE21B00A5F7F8 /* ShopCell.m */,
+				19A2175E1ECFE21B00A5F7F8 /* ShopCell.xib */,
+				19A217611ECFF0B600A5F7F8 /* ShopHeadView.h */,
+				19A217621ECFF0B600A5F7F8 /* ShopHeadView.m */,
+				19A217631ECFF0B600A5F7F8 /* ShopHeadView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -578,6 +598,15 @@
 				195963991ECC4CF500962133 /* UIButton+Rect.m */,
 			);
 			path = "UIButton+Rect";
+			sourceTree = "<group>";
+		};
+		19A217661ECFF54B00A5F7F8 /* ZYLoopScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				19A217671ECFF54B00A5F7F8 /* LoopScrollView.h */,
+				19A217681ECFF54B00A5F7F8 /* LoopScrollView.m */,
+			);
+			path = ZYLoopScrollView;
 			sourceTree = "<group>";
 		};
 		B725F8103C0990ACBCD16D93 /* Frameworks */ = {
@@ -710,6 +739,8 @@
 				199E86EC1ECD3DBA004D8A37 /* RegisterSuccessView.xib in Resources */,
 				19D52CB41ECEDB8E0072EE00 /* hourlyOrderCell.xib in Resources */,
 				1959623C1ECBF1FC00962133 /* LaunchScreen.storyboard in Resources */,
+				19A217651ECFF0B600A5F7F8 /* ShopHeadView.xib in Resources */,
+				19A217601ECFE21B00A5F7F8 /* ShopCell.xib in Resources */,
 				19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */,
 				19D52CB91ECEDB9E0072EE00 /* shopOrderCell.xib in Resources */,
 				199E87081ECD8C12004D8A37 /* MyMessageCell.xib in Resources */,
@@ -800,6 +831,7 @@
 			files = (
 				19D52CA41ECEA1100072EE00 /* MineListCell.m in Sources */,
 				19D52CB31ECEDB8E0072EE00 /* hourlyOrderCell.m in Sources */,
+				19A2175F1ECFE21B00A5F7F8 /* ShopCell.m in Sources */,
 				195962A31ECC010600962133 /* UIColor+HEXString.m in Sources */,
 				199E86EA1ECD3DB0004D8A37 /* RegisterSuccessView.m in Sources */,
 				1959639A1ECC4CF500962133 /* UIButton+Rect.m in Sources */,
@@ -813,7 +845,9 @@
 				195962721ECBF6BA00962133 /* ZYHTTPRequest.m in Sources */,
 				19D52CB81ECEDB9E0072EE00 /* shopOrderCell.m in Sources */,
 				199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */,
+				19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */,
 				19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */,
+				19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */,
 				19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */,
 				195962311ECBF1FC00962133 /* AppDelegate.m in Sources */,
 				199E86E61ECD2C8A004D8A37 /* RegisterViewController.m in Sources */,
