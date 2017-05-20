@@ -9,6 +9,11 @@
 #import "HomeViewController.h"
 #import "Networks.h"
 
+#import "HourlyServantListViewController.h"
+#import "MonthlyServentListViewController.h"
+
+
+
 @interface HomeViewController ()
 
 @end
@@ -19,18 +24,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self settingNavigationbar];
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self test];
+}
+
+- (void)test
+{
+    //HourlyServantListViewController *vc = [[HourlyServantListViewController alloc] init];
+    MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 /**
  *  配置导航栏
  */
 - (void)settingNavigationbar
 {
-//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 //    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
 //    [self.navigationController.navigationBar setBackgroundColor:RGB(219, 0, 17)];
     self.navigationController.navigationBar.translucent = NO;

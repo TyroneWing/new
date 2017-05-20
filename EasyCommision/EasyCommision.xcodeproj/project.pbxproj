@@ -49,6 +49,14 @@
 		19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217621ECFF0B600A5F7F8 /* ShopHeadView.m */; };
 		19A217651ECFF0B600A5F7F8 /* ShopHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217631ECFF0B600A5F7F8 /* ShopHeadView.xib */; };
 		19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217681ECFF54B00A5F7F8 /* LoopScrollView.m */; };
+		19A2176D1ED0262300A5F7F8 /* HourlyServantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2176B1ED0262300A5F7F8 /* HourlyServantListViewController.m */; };
+		19A2176E1ED0262300A5F7F8 /* HourlyServantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A2176C1ED0262300A5F7F8 /* HourlyServantListViewController.xib */; };
+		19A217721ED0267B00A5F7F8 /* MonthlyServentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217701ED0267B00A5F7F8 /* MonthlyServentListViewController.m */; };
+		19A217731ED0267B00A5F7F8 /* MonthlyServentListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217711ED0267B00A5F7F8 /* MonthlyServentListViewController.xib */; };
+		19A217771ED0286F00A5F7F8 /* hourlyServentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A217751ED0286F00A5F7F8 /* hourlyServentCell.m */; };
+		19A217781ED0286F00A5F7F8 /* hourlyServentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A217761ED0286F00A5F7F8 /* hourlyServentCell.xib */; };
+		19A2177C1ED0309800A5F7F8 /* monthlyServentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A2177A1ED0309800A5F7F8 /* monthlyServentCell.m */; };
+		19A2177D1ED0309800A5F7F8 /* monthlyServentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A2177B1ED0309800A5F7F8 /* monthlyServentCell.xib */; };
 		19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CDFB411ECE943A00232F60 /* AddressCell.m */; };
 		19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19CDFB421ECE943A00232F60 /* AddressCell.xib */; };
 		19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D52C9D1ECEA0F00072EE00 /* MineHeadCell.m */; };
@@ -159,6 +167,18 @@
 		19A217631ECFF0B600A5F7F8 /* ShopHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopHeadView.xib; sourceTree = "<group>"; };
 		19A217671ECFF54B00A5F7F8 /* LoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollView.h; sourceTree = "<group>"; };
 		19A217681ECFF54B00A5F7F8 /* LoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollView.m; sourceTree = "<group>"; };
+		19A2176A1ED0262300A5F7F8 /* HourlyServantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourlyServantListViewController.h; sourceTree = "<group>"; };
+		19A2176B1ED0262300A5F7F8 /* HourlyServantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyServantListViewController.m; sourceTree = "<group>"; };
+		19A2176C1ED0262300A5F7F8 /* HourlyServantListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourlyServantListViewController.xib; sourceTree = "<group>"; };
+		19A2176F1ED0267B00A5F7F8 /* MonthlyServentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthlyServentListViewController.h; sourceTree = "<group>"; };
+		19A217701ED0267B00A5F7F8 /* MonthlyServentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthlyServentListViewController.m; sourceTree = "<group>"; };
+		19A217711ED0267B00A5F7F8 /* MonthlyServentListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonthlyServentListViewController.xib; sourceTree = "<group>"; };
+		19A217741ED0286F00A5F7F8 /* hourlyServentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hourlyServentCell.h; sourceTree = "<group>"; };
+		19A217751ED0286F00A5F7F8 /* hourlyServentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hourlyServentCell.m; sourceTree = "<group>"; };
+		19A217761ED0286F00A5F7F8 /* hourlyServentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hourlyServentCell.xib; sourceTree = "<group>"; };
+		19A217791ED0309800A5F7F8 /* monthlyServentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monthlyServentCell.h; sourceTree = "<group>"; };
+		19A2177A1ED0309800A5F7F8 /* monthlyServentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = monthlyServentCell.m; sourceTree = "<group>"; };
+		19A2177B1ED0309800A5F7F8 /* monthlyServentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = monthlyServentCell.xib; sourceTree = "<group>"; };
 		19CDFB401ECE943A00232F60 /* AddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCell.h; sourceTree = "<group>"; };
 		19CDFB411ECE943A00232F60 /* AddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCell.m; sourceTree = "<group>"; };
 		19CDFB421ECE943A00232F60 /* AddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressCell.xib; sourceTree = "<group>"; };
@@ -371,6 +391,12 @@
 			children = (
 				1959627F1ECBF96500962133 /* HomeViewController.h */,
 				195962801ECBF96500962133 /* HomeViewController.m */,
+				19A2176A1ED0262300A5F7F8 /* HourlyServantListViewController.h */,
+				19A2176B1ED0262300A5F7F8 /* HourlyServantListViewController.m */,
+				19A2176C1ED0262300A5F7F8 /* HourlyServantListViewController.xib */,
+				19A2176F1ED0267B00A5F7F8 /* MonthlyServentListViewController.h */,
+				19A217701ED0267B00A5F7F8 /* MonthlyServentListViewController.m */,
+				19A217711ED0267B00A5F7F8 /* MonthlyServentListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -385,6 +411,12 @@
 		195962821ECBF96500962133 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				19A217741ED0286F00A5F7F8 /* hourlyServentCell.h */,
+				19A217751ED0286F00A5F7F8 /* hourlyServentCell.m */,
+				19A217761ED0286F00A5F7F8 /* hourlyServentCell.xib */,
+				19A217791ED0309800A5F7F8 /* monthlyServentCell.h */,
+				19A2177A1ED0309800A5F7F8 /* monthlyServentCell.m */,
+				19A2177B1ED0309800A5F7F8 /* monthlyServentCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -736,9 +768,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A217781ED0286F00A5F7F8 /* hourlyServentCell.xib in Resources */,
 				199E86EC1ECD3DBA004D8A37 /* RegisterSuccessView.xib in Resources */,
 				19D52CB41ECEDB8E0072EE00 /* hourlyOrderCell.xib in Resources */,
 				1959623C1ECBF1FC00962133 /* LaunchScreen.storyboard in Resources */,
+				19A2177D1ED0309800A5F7F8 /* monthlyServentCell.xib in Resources */,
 				19A217651ECFF0B600A5F7F8 /* ShopHeadView.xib in Resources */,
 				19A217601ECFE21B00A5F7F8 /* ShopCell.xib in Resources */,
 				19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */,
@@ -751,6 +785,8 @@
 				199E87001ECD8569004D8A37 /* OrderPaySuccessViewController.xib in Resources */,
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
 				19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */,
+				19A217731ED0267B00A5F7F8 /* MonthlyServentListViewController.xib in Resources */,
+				19A2176E1ED0262300A5F7F8 /* HourlyServantListViewController.xib in Resources */,
 				195962391ECBF1FC00962133 /* Assets.xcassets in Resources */,
 				195962371ECBF1FC00962133 /* Main.storyboard in Resources */,
 				19D52CAF1ECEDB760072EE00 /* monthlyOrderCell.xib in Resources */,
@@ -838,12 +874,14 @@
 				199E86F51ECD7896004D8A37 /* ResetPWViewController.m in Sources */,
 				199E87031ECD8875004D8A37 /* MyMessageViewController.m in Sources */,
 				199E86F91ECD799F004D8A37 /* ResetPWSuccessView.m in Sources */,
+				19A2177C1ED0309800A5F7F8 /* monthlyServentCell.m in Sources */,
 				19D52CAE1ECEDB760072EE00 /* monthlyOrderCell.m in Sources */,
 				199E86F01ECD74ED004D8A37 /* ForgetPWViewController.m in Sources */,
 				195963461ECC3B3800962133 /* LoginViewController.m in Sources */,
 				195962341ECBF1FC00962133 /* ViewController.m in Sources */,
 				195962721ECBF6BA00962133 /* ZYHTTPRequest.m in Sources */,
 				19D52CB81ECEDB9E0072EE00 /* shopOrderCell.m in Sources */,
+				19A2176D1ED0262300A5F7F8 /* HourlyServantListViewController.m in Sources */,
 				199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */,
 				19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */,
 				19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */,
@@ -856,7 +894,9 @@
 				1959622E1ECBF1FC00962133 /* main.m in Sources */,
 				199E86FF1ECD8569004D8A37 /* OrderPaySuccessViewController.m in Sources */,
 				195963961ECC4C8800962133 /* UIView+Extension.m in Sources */,
+				19A217771ED0286F00A5F7F8 /* hourlyServentCell.m in Sources */,
 				19D52CA91ECED4040072EE00 /* OrderViewController.m in Sources */,
+				19A217721ED0267B00A5F7F8 /* MonthlyServentListViewController.m in Sources */,
 				1959629D1ECBFA8600962133 /* MineViewController.m in Sources */,
 				195962941ECBF96500962133 /* HomeViewController.m in Sources */,
 				1959626D1ECBF67E00962133 /* NSObject+AnalyticalModel.m in Sources */,

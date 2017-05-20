@@ -48,8 +48,6 @@ typedef enum : NSUInteger {
     [self.view addSubview:self.shopCollectionView];
 }
 
-
-
 /**
  模拟数据
  */
@@ -267,6 +265,10 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
     [self.navigationController.navigationBar setBarTintColor:RGB(219, 0, 17)];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"商城";
+}
+
+- (IBAction)searchBtnClick:(UIButton *)sender {
+    [self.view endEditing:YES];
 }
 
 //首页（商城）

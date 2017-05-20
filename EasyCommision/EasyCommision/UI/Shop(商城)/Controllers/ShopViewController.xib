@@ -39,6 +39,9 @@
                     <state key="normal" title="搜索">
                         <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="searchBtnClick:" destination="-1" eventType="touchUpInside" id="lSQ-2K-Mdn"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgy-Ed-UJB">
                     <rect key="frame" x="246.5" y="55" width="1" height="20"/>
