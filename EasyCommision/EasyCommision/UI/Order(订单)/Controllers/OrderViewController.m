@@ -41,11 +41,8 @@ typedef enum : NSUInteger {
     
     [self settingNavigationbar];
     self.orderType = orderMonthly;
-    
     [self dataTest];
-    
     [self.view addSubview:self.orderTableView];
-    
 }
 
 
@@ -57,7 +54,7 @@ typedef enum : NSUInteger {
     for (int i = 0; i<6; i++) {
         [self.monthlyOrderArray addObject:@1];
     }
-    for (int i = 0; i<3; i++) {
+    for (int i = 0; i<1; i++) {
         [self.hourlyOrderArray addObject:@1];
     }
     for (int i = 0; i<10; i++) {

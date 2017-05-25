@@ -27,9 +27,9 @@ typedef enum : NSUInteger {
 @property (nonatomic,strong) NSMutableArray *storesArray;
 @property (nonatomic,strong) NSMutableArray *intelligentArray;
 @property (assign,nonatomic) Shop shopType;
-@property (weak, nonatomic) IBOutlet UIButton *shopHomeBtn;
-@property (weak, nonatomic) IBOutlet UIButton *shopStoresBtn;
-@property (weak, nonatomic) IBOutlet UIButton *shopIntelligentBtn;
+@property (weak, nonatomic) IBOutlet UIButton *shopHomeBtn;//商城首页
+@property (weak, nonatomic) IBOutlet UIButton *shopStoresBtn;//家居百货
+@property (weak, nonatomic) IBOutlet UIButton *shopIntelligentBtn;//智能家居
 
 @end
 
@@ -57,7 +57,7 @@ typedef enum : NSUInteger {
         [self.shopArray addObject:@1];
     }
     
-    for (int i = 0; i<8; i++) {
+    for (int i = 0; i<3; i++) {
         [self.storesArray addObject:@1];
     }
     
@@ -113,12 +113,9 @@ typedef enum : NSUInteger {
         
         //
 //        [_shopCollectionView registerClass:[ShopCell class] forCellWithReuseIdentifier:NSStringFromClass([ShopCell class])];
-        
         UINib *nib = [UINib nibWithNibName:NSStringFromClass([ShopCell class])
                                     bundle: [NSBundle mainBundle]];
         [_shopCollectionView registerNib:nib forCellWithReuseIdentifier:NSStringFromClass([ShopCell class])];
-        
-        
         [_shopCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ShopHeadView class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([ShopHeadView class])];
     }
     return _shopCollectionView;

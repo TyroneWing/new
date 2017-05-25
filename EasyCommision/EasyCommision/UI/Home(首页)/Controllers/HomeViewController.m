@@ -10,7 +10,8 @@
 #import "Networks.h"
 #import "HomeKnowledgeCell.h"
 #import "monthlyServentCell.h"
-
+#import "HomeTypeCell.h"
+#import "HomeHeadCell.h"
 #import "HourlyServantListViewController.h"
 #import "MonthlyServentListViewController.h"
 
@@ -31,9 +32,10 @@
     // Do any additional setup after loading the view.
     
     
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
 
-//    [self settingNavigationbar];
+    [self settingNavigationbar];
     [self.view addSubview:self.homeTableView];
 
 }
@@ -66,7 +68,7 @@
 {
     
     if (section == 0) {
-        return 0;
+        return 2;
     } else if (section == 1) {
         return 2;
     } else if (section == 2) {
@@ -79,10 +81,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     if (indexPath.section == 0) {
-        HomeKnowledgeCell *cell = [HomeKnowledgeCell cellWithTableView:tableView];
-        return cell;
+        
+        if (indexPath.row == 0) {
+            HomeHeadCell *cell = [HomeHeadCell cellWithTableView:tableView];
+            return cell;
+        } else {
+            HomeTypeCell *cell = [HomeTypeCell cellWithTableView:tableView];
+            return cell;
+        }
     } else if (indexPath.section == 1) {
         monthlyServentCell *cell = [monthlyServentCell cellWithTableView:tableView];
         return cell;
@@ -94,6 +101,29 @@
         return cell;
     }
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    AlartChartHeaderFooterView *view  = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HeaderFooterView"];
+//    if (view == nil) {
+//        view = [[AlartChartHeaderFooterView alloc] initWithReuseIdentifier:@"HeaderFooterView"];
+//    }
+//    if (section == 0) {
+//        view.headLabel.text = @"报警时间走势图";
+//        view.contentView.backgroundColor = RGB_NomalColor;
+//        
+//    } else {
+//        view.headLabel.text = @"报警列表";
+//        view.contentView.backgroundColor = RGB_NomalColor;
+//    }
+//    return view;
+//}
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return 40;
+//}
+
 
 - (UITableView *)homeTableView
 {
@@ -144,13 +174,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    self.navigationController.navigationBar.hidden = NO;
 }
 
 

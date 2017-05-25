@@ -7,6 +7,7 @@
 //
 
 #import "LoopScrollView.h"
+#import "UIImageView+WebCache.h"
 
 @interface LoopScrollView ()<UIScrollViewDelegate>
 {
@@ -78,7 +79,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         //下载图片
-        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:urlString]];
+        //NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:urlString]];
         
         //下载完成设置图片
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -86,15 +87,19 @@
             
             if(index == _pageCount - 1)
             {
-                _preImageView.image = [UIImage imageWithData:data];
+                //_preImageView.image = [UIImage imageWithData:data];
+                [_preImageView sd_setImageWithURL:[NSURL URLWithString:urlString]];
             }
             if(index == 0)
             {
-                _lastImageView.image = [UIImage imageWithData:data];
+                //_lastImageView.image = [UIImage imageWithData:data];
+                [_preImageView sd_setImageWithURL:[NSURL URLWithString:urlString]];
+
             }
             
             UIImageView *view = _imageViewArray[index];
-            view.image = [UIImage imageWithData:data];
+            //view.image = [UIImage imageWithData:data];
+            [view sd_setImageWithURL:[NSURL URLWithString:urlString]];
             
         });
     });
