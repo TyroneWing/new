@@ -14,7 +14,7 @@
 #import "HomeHeadCell.h"
 #import "HourlyServantListViewController.h"
 #import "MonthlyServentListViewController.h"
-
+#import "HomeHeaderView.h"
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -39,22 +39,6 @@
     [self.view addSubview:self.homeTableView];
 
 }
-
-
-//
-//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    [self test];
-//}
-//
-//- (void)test
-//{
-//    //HourlyServantListViewController *vc = [[HourlyServantListViewController alloc] init];//钟点工列表页面
-//    MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];//住家工列表页面
-//    vc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:vc animated:YES];
-//}
-
 
 
 #pragma mark - TableView
@@ -88,6 +72,22 @@
             return cell;
         } else {
             HomeTypeCell *cell = [HomeTypeCell cellWithTableView:tableView];
+             __weak __typeof__(self) weakSelf = self;
+            [cell setHomeBtnClick:^(UIButton *btn) {
+                __strong __typeof(self) strongSelf = weakSelf;
+                MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];//住家工列表页面
+                vc.hidesBottomBarWhenPushed = YES;
+                [strongSelf.navigationController pushViewController:vc animated:YES];
+            }];
+            [cell setHourlyBtnClick:^(UIButton *btn) {
+                __strong __typeof(self) strongSelf = weakSelf;
+                HourlyServantListViewController *vc = [[HourlyServantListViewController alloc] init];//钟点工列表页面
+                vc.hidesBottomBarWhenPushed = YES;
+                [strongSelf.navigationController pushViewController:vc animated:YES];
+            }];
+            [cell setReservationBtnClick:^(UIButton *btn) {
+                NSLog(@"快速预约");
+            }];
             return cell;
         }
     } else if (indexPath.section == 1) {
@@ -102,33 +102,51 @@
     }
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    AlartChartHeaderFooterView *view  = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HeaderFooterView"];
-//    if (view == nil) {
-//        view = [[AlartChartHeaderFooterView alloc] initWithReuseIdentifier:@"HeaderFooterView"];
-//    }
-//    if (section == 0) {
-//        view.headLabel.text = @"报警时间走势图";
-//        view.contentView.backgroundColor = RGB_NomalColor;
-//        
-//    } else {
-//        view.headLabel.text = @"报警列表";
-//        view.contentView.backgroundColor = RGB_NomalColor;
-//    }
-//    return view;
-//}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section) {
+        HomeHeaderView *view  = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"HeaderFooterView"];
+        if (view == nil) {
+            view = [[HomeHeaderView alloc] initWithReuseIdentifier:@"HeaderFooterView"];
+        }
+        if (section == 1) {
+            view.headLabel.text = @"推荐佣工";
+            
+        } else if (section == 2) {
+            view.headLabel.text = @"推荐商品";
+        } else {
+            view.headLabel.text = @"家居知识";
+        }
+        [view setMoreBtnClick:^(UIButton *btn) {
+            if (section == 1) {
+                NSLog(@"推荐佣工");
+            } else if (section == 2) {
+                NSLog(@"推荐商品");
+            } else {
+                NSLog(@"家居知识");
+            }
+        }];
+        return view;
+    } else {
+        return nil;
+    }
+    
+}
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-//{
-//    return 40;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section) {
+        return 55;
+    }
+    return 0.0;
+}
 
 
 - (UITableView *)homeTableView
 {
     if (_homeTableView == nil) {
-        _homeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _homeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _homeTableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, kWIN_WIDTH, 0.01f)];
         _homeTableView.backgroundColor = [UIColor whiteColor];
         _homeTableView.delegate = self;
         _homeTableView.dataSource = self;

@@ -9,6 +9,10 @@
 #ifndef Networks_h
 #define Networks_h
 
+
+#define weakly(type) __weak typeof(type) weak##type = type;
+#define strongly(type)  __strong typeof(type) type = weak##type;
+
 #define   kWIN_WIDTH  [[UIScreen mainScreen] bounds].size.width
 #define   kWIN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 

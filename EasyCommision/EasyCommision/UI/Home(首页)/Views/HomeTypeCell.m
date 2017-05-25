@@ -37,6 +37,36 @@
 }
 
 
+/**
+ 住家工
+
+ */
+- (IBAction)homeBtnClick:(UIButton *)sender {
+    if (self.homeBtnClick) {
+        self.homeBtnClick(sender);
+    }
+}
+
+/**
+ 钟点工
+
+ */
+- (IBAction)hourlyBtnClick:(UIButton *)sender {
+    if (self.hourlyBtnClick) {
+        self.hourlyBtnClick(sender);
+    }
+}
+
+/**
+ 快速预约
+
+ */
+- (IBAction)reservationBtnClick:(UIButton *)sender {
+    if (self.reservationBtnClick) {
+        self.reservationBtnClick(sender);
+    }
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

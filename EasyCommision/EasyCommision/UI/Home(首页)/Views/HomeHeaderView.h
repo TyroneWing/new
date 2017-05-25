@@ -10,5 +10,5 @@
 
 @interface HomeHeaderView : UITableViewHeaderFooterView
 @property (nonatomic,strong) UILabel *headLabel;;
-
+@property (nonatomic,copy) void (^moreBtnClick)(UIButton *btn);
 @end
