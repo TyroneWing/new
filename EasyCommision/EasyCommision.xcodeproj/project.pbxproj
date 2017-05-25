@@ -26,6 +26,10 @@
 		195963471ECC3B3800962133 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 195963451ECC3B3800962133 /* LoginViewController.xib */; };
 		195963961ECC4C8800962133 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 195963951ECC4C8800962133 /* UIView+Extension.m */; };
 		1959639A1ECC4CF500962133 /* UIButton+Rect.m in Sources */ = {isa = PBXBuildFile; fileRef = 195963991ECC4CF500962133 /* UIButton+Rect.m */; };
+		1978C5611ED527A600C1ADFC /* HomeTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978C55F1ED527A600C1ADFC /* HomeTypeCell.m */; };
+		1978C5621ED527A600C1ADFC /* HomeTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1978C5601ED527A600C1ADFC /* HomeTypeCell.xib */; };
+		1978C5661ED527CB00C1ADFC /* HomeKnowledgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978C5641ED527CB00C1ADFC /* HomeKnowledgeCell.m */; };
+		1978C5671ED527CB00C1ADFC /* HomeKnowledgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1978C5651ED527CB00C1ADFC /* HomeKnowledgeCell.xib */; };
 		199E86E61ECD2C8A004D8A37 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199E86E41ECD2C8A004D8A37 /* RegisterViewController.m */; };
 		199E86E71ECD2C8A004D8A37 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E86E51ECD2C8A004D8A37 /* RegisterViewController.xib */; };
 		199E86EA1ECD3DB0004D8A37 /* RegisterSuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 199E86E91ECD3DB0004D8A37 /* RegisterSuccessView.m */; };
@@ -131,6 +135,12 @@
 		195963951ECC4C8800962133 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		195963981ECC4CF500962133 /* UIButton+Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Rect.h"; sourceTree = "<group>"; };
 		195963991ECC4CF500962133 /* UIButton+Rect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Rect.m"; sourceTree = "<group>"; };
+		1978C55E1ED527A600C1ADFC /* HomeTypeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTypeCell.h; sourceTree = "<group>"; };
+		1978C55F1ED527A600C1ADFC /* HomeTypeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTypeCell.m; sourceTree = "<group>"; };
+		1978C5601ED527A600C1ADFC /* HomeTypeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTypeCell.xib; sourceTree = "<group>"; };
+		1978C5631ED527CB00C1ADFC /* HomeKnowledgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeKnowledgeCell.h; sourceTree = "<group>"; };
+		1978C5641ED527CB00C1ADFC /* HomeKnowledgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeKnowledgeCell.m; sourceTree = "<group>"; };
+		1978C5651ED527CB00C1ADFC /* HomeKnowledgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeKnowledgeCell.xib; sourceTree = "<group>"; };
 		199E86E31ECD2C8A004D8A37 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		199E86E41ECD2C8A004D8A37 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		199E86E51ECD2C8A004D8A37 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -417,6 +427,12 @@
 				19A217791ED0309800A5F7F8 /* monthlyServentCell.h */,
 				19A2177A1ED0309800A5F7F8 /* monthlyServentCell.m */,
 				19A2177B1ED0309800A5F7F8 /* monthlyServentCell.xib */,
+				1978C55E1ED527A600C1ADFC /* HomeTypeCell.h */,
+				1978C55F1ED527A600C1ADFC /* HomeTypeCell.m */,
+				1978C5601ED527A600C1ADFC /* HomeTypeCell.xib */,
+				1978C5631ED527CB00C1ADFC /* HomeKnowledgeCell.h */,
+				1978C5641ED527CB00C1ADFC /* HomeKnowledgeCell.m */,
+				1978C5651ED527CB00C1ADFC /* HomeKnowledgeCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -786,7 +802,9 @@
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
 				19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */,
 				19A217731ED0267B00A5F7F8 /* MonthlyServentListViewController.xib in Resources */,
+				1978C5621ED527A600C1ADFC /* HomeTypeCell.xib in Resources */,
 				19A2176E1ED0262300A5F7F8 /* HourlyServantListViewController.xib in Resources */,
+				1978C5671ED527CB00C1ADFC /* HomeKnowledgeCell.xib in Resources */,
 				195962391ECBF1FC00962133 /* Assets.xcassets in Resources */,
 				195962371ECBF1FC00962133 /* Main.storyboard in Resources */,
 				19D52CAF1ECEDB760072EE00 /* monthlyOrderCell.xib in Resources */,
@@ -885,6 +903,7 @@
 				199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */,
 				19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */,
 				19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */,
+				1978C5661ED527CB00C1ADFC /* HomeKnowledgeCell.m in Sources */,
 				19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */,
 				19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */,
 				195962311ECBF1FC00962133 /* AppDelegate.m in Sources */,
@@ -899,6 +918,7 @@
 				19A217721ED0267B00A5F7F8 /* MonthlyServentListViewController.m in Sources */,
 				1959629D1ECBFA8600962133 /* MineViewController.m in Sources */,
 				195962941ECBF96500962133 /* HomeViewController.m in Sources */,
+				1978C5611ED527A600C1ADFC /* HomeTypeCell.m in Sources */,
 				1959626D1ECBF67E00962133 /* NSObject+AnalyticalModel.m in Sources */,
 				19A2175A1ECFDB2000A5F7F8 /* ShopViewController.m in Sources */,
 				199E870B1ECDA3FF004D8A37 /* AddressListViewController.m in Sources */,

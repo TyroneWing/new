@@ -8,13 +8,19 @@
 
 #import "HomeViewController.h"
 #import "Networks.h"
+#import "HomeKnowledgeCell.h"
+#import "monthlyServentCell.h"
 
 #import "HourlyServantListViewController.h"
 #import "MonthlyServentListViewController.h"
 
 
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong) UITableView *homeTableView;
+@property (nonatomic,strong) NSMutableArray *knowledgeArray;
+@property (nonatomic,strong) NSMutableArray *serventArray;
 
 @end
 
@@ -26,21 +32,98 @@
     
     
     self.view.backgroundColor = [UIColor whiteColor];
+
+//    [self settingNavigationbar];
+    [self.view addSubview:self.homeTableView];
+
+}
+
+
+//
+//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//    [self test];
+//}
+//
+//- (void)test
+//{
+//    //HourlyServantListViewController *vc = [[HourlyServantListViewController alloc] init];//钟点工列表页面
+//    MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];//住家工列表页面
+//    vc.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
+
+
+
+#pragma mark - TableView
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 4;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     
-    [self settingNavigationbar];
+    if (section == 0) {
+        return 0;
+    } else if (section == 1) {
+        return 2;
+    } else if (section == 2) {
+        return 0;
+    } else if (section == 3) {
+        return 10;
+    }
+    return 0;
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self test];
+    
+    if (indexPath.section == 0) {
+        HomeKnowledgeCell *cell = [HomeKnowledgeCell cellWithTableView:tableView];
+        return cell;
+    } else if (indexPath.section == 1) {
+        monthlyServentCell *cell = [monthlyServentCell cellWithTableView:tableView];
+        return cell;
+    } else if (indexPath.section == 2) {
+        HomeKnowledgeCell *cell = [HomeKnowledgeCell cellWithTableView:tableView];
+        return cell;
+    } else {
+        HomeKnowledgeCell *cell = [HomeKnowledgeCell cellWithTableView:tableView];
+        return cell;
+    }
 }
 
-- (void)test
+- (UITableView *)homeTableView
 {
-    //HourlyServantListViewController *vc = [[HourlyServantListViewController alloc] init];
-    MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+    if (_homeTableView == nil) {
+        _homeTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _homeTableView.backgroundColor = [UIColor whiteColor];
+        _homeTableView.delegate = self;
+        _homeTableView.dataSource = self;
+        _homeTableView.estimatedRowHeight = 120.0;
+        _homeTableView.rowHeight = UITableViewAutomaticDimension;
+        _homeTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+        _homeTableView.separatorStyle = NO;
+    }
+    return _homeTableView;
+}
+
+- (NSMutableArray *)knowledgeArray
+{
+    if (_knowledgeArray == nil) {
+        _knowledgeArray = [NSMutableArray array];
+    }
+    return _knowledgeArray;
+}
+
+- (NSMutableArray *)serventArray
+{
+    if (_serventArray == nil) {
+        _serventArray = [NSMutableArray array];
+    }
+    return _serventArray;
 }
 
 /**
@@ -56,6 +139,20 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"首页";
 }
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.hidden = NO;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

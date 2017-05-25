@@ -12,8 +12,8 @@
 
 
 @interface HourlyServantListViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic,strong) UITableView *hourlyServentTableView;
 
+@property (nonatomic,strong) UITableView *hourlyServentTableView;
 @property (nonatomic,strong) NSMutableArray *hourlyServentArray;
 
 @end
