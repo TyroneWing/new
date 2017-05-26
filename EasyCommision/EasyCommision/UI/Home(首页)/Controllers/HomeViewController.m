@@ -15,10 +15,13 @@
 #import "HourlyServantListViewController.h"
 #import "MonthlyServentListViewController.h"
 #import "HomeHeaderView.h"
+#import "MyMessageViewController.h"
+#import "HomeNavibarView.h"
+#import "MonthlyServentTypeController.h"
 
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
+@property (nonatomic,strong) HomeNavibarView *homeBarView;
 @property (nonatomic,strong) UITableView *homeTableView;
 @property (nonatomic,strong) NSMutableArray *knowledgeArray;
 @property (nonatomic,strong) NSMutableArray *serventArray;
@@ -31,7 +34,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    NSLog(@"kWIN_WIDTH %f",kWIN_WIDTH/2.0);
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -73,9 +76,17 @@
         } else {
             HomeTypeCell *cell = [HomeTypeCell cellWithTableView:tableView];
              __weak __typeof__(self) weakSelf = self;
+            
+            [cell setMsgBtnClick:^(UIButton *btn) {
+                __strong __typeof(self) strongSelf = weakSelf;
+                MyMessageViewController *vc = [[MyMessageViewController alloc] init];
+                vc.hidesBottomBarWhenPushed = YES;
+                [strongSelf.navigationController pushViewController:vc animated:YES];
+            }];
+            
             [cell setHomeBtnClick:^(UIButton *btn) {
                 __strong __typeof(self) strongSelf = weakSelf;
-                MonthlyServentListViewController *vc = [[MonthlyServentListViewController alloc] init];//住家工列表页面
+                MonthlyServentTypeController *vc = [[MonthlyServentTypeController alloc] init];//住家工分类页面
                 vc.hidesBottomBarWhenPushed = YES;
                 [strongSelf.navigationController pushViewController:vc animated:YES];
             }];
@@ -142,6 +153,50 @@
 }
 
 
+//-(void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset{
+//    
+//    if(velocity.y<0) {
+//        [self.navigationController setNavigationBarHidden:YES animated:YES];
+//    } else {
+//        [self.navigationController setNavigationBarHidden:NO animated:YES];
+//    }
+//}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //NSLog(@"tableview = %@",NSStringFromCGPoint(scrollView.contentOffset));
+    
+    CGPoint p = scrollView.contentOffset;
+    if (p.y<kWIN_WIDTH/2.0) {
+        self.homeBarView.alpha = 0.0;
+    } else {
+        if (p.y-kWIN_WIDTH/2.0 -64>1) {
+            self.homeBarView.alpha = 1;
+        } else {
+            //NSLog(@"alpha = %f",(p.y-kWIN_WIDTH/2.0)/64.0);
+            self.homeBarView.alpha = (p.y-kWIN_WIDTH/2.0)/64.0;
+        }
+    }
+    
+}
+
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//    NSLog(@"tableview = %@",NSStringFromCGPoint(scrollView.contentOffset));
+//}
+
+
+- (HomeNavibarView *)homeBarView
+{
+    if (_homeBarView == nil) {
+        _homeBarView =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([HomeNavibarView class]) owner:nil options:nil] firstObject];
+        _homeBarView.frame = CGRectMake(0, 0, kWIN_WIDTH, 64);
+        [self.view addSubview:_homeBarView];
+    }
+    return _homeBarView;
+}
+
 - (UITableView *)homeTableView
 {
     if (_homeTableView == nil) {
@@ -150,10 +205,13 @@
         _homeTableView.backgroundColor = [UIColor whiteColor];
         _homeTableView.delegate = self;
         _homeTableView.dataSource = self;
+        _homeTableView.showsVerticalScrollIndicator = NO;
+        _homeTableView.showsHorizontalScrollIndicator = NO;
         _homeTableView.estimatedRowHeight = 120.0;
         _homeTableView.rowHeight = UITableViewAutomaticDimension;
         _homeTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         _homeTableView.separatorStyle = NO;
+        _homeTableView.bounces = NO;
     }
     return _homeTableView;
 }
@@ -186,20 +244,21 @@
     [self.navigationController.navigationBar setBarTintColor:RGB(219, 0, 17)];
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.navigationItem.title = @"首页";
+   
 }
 
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 //    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
 //    self.navigationController.navigationBar.hidden = NO;
 }
 

@@ -44,7 +44,7 @@
                             <constraint firstAttribute="height" constant="1" id="In5-x8-ea7"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goods_img" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-YM-Blm">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_test" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-YM-Blm">
                         <rect key="frame" x="15" y="65" width="120" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="HLQ-Ha-PEg"/>
@@ -191,6 +191,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="goods_img" width="130" height="173"/>
+        <image name="order_test" width="158" height="107"/>
     </resources>
 </document>

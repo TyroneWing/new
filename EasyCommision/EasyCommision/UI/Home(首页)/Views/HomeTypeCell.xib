@@ -29,6 +29,9 @@
                                     <constraint firstAttribute="height" constant="30" id="x5P-HG-xtT"/>
                                 </constraints>
                                 <state key="normal" image="message_icon"/>
+                                <connections>
+                                    <action selector="msgBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AvE-TQ-VgX"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" placeholder="搜索您的家政服务" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3av-p4-Efh">
                                 <rect key="frame" x="106" y="8" width="263" height="44"/>

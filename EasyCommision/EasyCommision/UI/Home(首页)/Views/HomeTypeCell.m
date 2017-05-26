@@ -36,6 +36,15 @@
     return cell;
 }
 
+/**
+   消息
+ 
+ */
+- (IBAction)msgBtnClick:(UIButton *)sender {
+    if (self.msgBtnClick) {
+        self.msgBtnClick(sender);
+    }
+}
 
 /**
  住家工
