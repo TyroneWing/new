@@ -34,7 +34,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"kWIN_WIDTH %f",kWIN_WIDTH/2.0);
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.view.backgroundColor = [UIColor whiteColor];
 

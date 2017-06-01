@@ -10,6 +10,6 @@
 #import "LoopScrollView.h"
 
 @interface ShopHeadView : UICollectionReusableView
-@property (weak, nonatomic) IBOutlet LoopScrollView *loopscrollView;
+//@property (weak, nonatomic) IBOutlet LoopScrollView *loopscrollView;
 
 @end

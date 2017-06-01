@@ -11,6 +11,8 @@
 #import "ShopCell.h"
 #import "ShopHeadView.h"
 #import "LoopScrollView.h"
+#import "ShopDetailViewController.h"
+
 
 typedef enum : NSUInteger {
     shopHome,//商城首页
@@ -190,6 +192,9 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 //代理方法, item点击执行
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
+    shopDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:shopDetailVC animated:YES];
 
 }
 
@@ -205,43 +210,43 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
     }
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    if (kind == UICollectionElementKindSectionHeader) {
-        ShopHeadView *headerRV = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([ShopHeadView class]) forIndexPath:indexPath];
-        
-//        NSLog(@"%@",headerRV);
-        
-        
-        NSArray *imageArray = @[
-                                @"http://img03.liwushuo.com/image/160222/cya7ul0v2.jpg-w720",
-                                @"http://img03.liwushuo.com/image/160225/s0zlrxo86.jpg-w720",
-                                @"http://img02.liwushuo.com/image/160204/ql9tvfhax.jpg-w720",
-                                @"http://img01.liwushuo.com/image/160219/1no7rb071.jpg-w720"];
-        
-        //LoopScrollView *loopScrollView = [[LoopScrollView alloc] initWithFrame:CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5.0)];
-        //设置属性
-        headerRV.loopscrollView.pageCount = (int)imageArray.count;
-        headerRV.loopscrollView.autoScroll = YES;
-        headerRV.loopscrollView.showPageControl = YES;
-        headerRV.loopscrollView.frame = CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5.0);
-        [headerRV.loopscrollView setClickAction:^(UIImageView *imageView, int index) {
-            
-            NSLog(@"点击第%d张图",(int)index);
-            
-        }];
-        //设置网络图片
-        //注意: 添加网络图片之前, 需要先设置显示的页数
-        for (int i=0; i<imageArray.count; i++) {
-            [headerRV.loopscrollView setImageWithUrlString:imageArray[i] atIndex:i];
-        }
-        
-        return headerRV;
-        
-    } else {
-        return nil;
-    }
-}
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (kind == UICollectionElementKindSectionHeader) {
+//        ShopHeadView *headerRV = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([ShopHeadView class]) forIndexPath:indexPath];
+//        
+////        NSLog(@"%@",headerRV);
+////        headerRV.loopscrollView.pageCount = 3;
+//
+////        NSArray *imageArray = @[
+////                                @"http://img03.liwushuo.com/image/160222/cya7ul0v2.jpg-w720",
+////                                @"http://img03.liwushuo.com/image/160225/s0zlrxo86.jpg-w720",
+////                                @"http://img02.liwushuo.com/image/160204/ql9tvfhax.jpg-w720",
+////                                @"http://img01.liwushuo.com/image/160219/1no7rb071.jpg-w720"];
+////        
+////        //LoopScrollView *loopScrollView = [[LoopScrollView alloc] initWithFrame:CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5.0)];
+////        //设置属性
+////        headerRV.loopscrollView.pageCount = (int)imageArray.count;
+////        headerRV.loopscrollView.autoScroll = YES;
+////        headerRV.loopscrollView.showPageControl = YES;
+////        headerRV.loopscrollView.frame = CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5.0);
+////        [headerRV.loopscrollView setClickAction:^(UIImageView *imageView, int index) {
+////            
+////            NSLog(@"点击第%d张图",(int)index);
+////            
+////        }];
+////        //设置网络图片
+////        //注意: 添加网络图片之前, 需要先设置显示的页数
+////        for (int i=0; i<imageArray.count; i++) {
+////            [headerRV.loopscrollView setImageWithUrlString:imageArray[i] atIndex:i];
+////        }
+//
+//        return headerRV;
+//        
+//    } else {
+//        return nil;
+//    }
+//}
 
 
 
@@ -256,7 +261,7 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
  */
 - (void)settingNavigationbar
 {
-    //    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     //    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg.png"] forBarMetrics:UIBarMetricsDefault];
     //    [self.navigationController.navigationBar setBackgroundColor:RGB(219, 0, 17)];
     self.navigationController.navigationBar.translucent = NO;

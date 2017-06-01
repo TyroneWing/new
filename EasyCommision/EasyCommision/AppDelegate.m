@@ -59,10 +59,10 @@
 
 - (void)createTabBarVC
 {
+
     NSArray *titleArray = @[@"首页",@"商城",@"订单",@"我的"];
     NSArray *imageArray = @[@"home_g1.png",@"main_g2.png",@"main_g3.png",@"main_g4.png"];
     NSArray *imageSelectArray = @[@"home_rd.png",@"main_r2.png",@"main_r3.png",@"main_r4.png"];
-
     BaseTabBarViewController *baseTarbarVC  = [[BaseTabBarViewController alloc] init];
     baseTarbarVC.tabBar.tintColor = RGB(220, 0, 22);
     //首页
@@ -97,6 +97,7 @@
     self.window.rootViewController = baseTarbarVC;
     [self.window makeKeyAndVisible];
 
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
 }
 
 
