@@ -94,7 +94,9 @@
     UINavigationController *mineNaviVC = [[UINavigationController alloc] initWithRootViewController:mineVC];
     
     baseTarbarVC.viewControllers = @[homeNaviVC,shopNaviVC,orderNaviVC,mineNaviVC];
+
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
+
     self.window.rootViewController = baseTarbarVC;
     [self.window makeKeyAndVisible];
 

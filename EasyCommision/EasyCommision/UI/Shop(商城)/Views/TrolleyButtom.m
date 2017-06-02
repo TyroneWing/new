@@ -24,9 +24,9 @@
 
     [self layoutSubviews];
 
-    NSLog(@"self.frame = %@",NSStringFromCGRect(self.frame));
-    NSLog(@"self.accountBtn.frame = %@",NSStringFromCGRect(self.accountBtn.frame));
-    NSLog(@"kWIN_WIDTH %f",kWIN_WIDTH);
+//    NSLog(@"self.frame = %@",NSStringFromCGRect(self.frame));
+//    NSLog(@"self.accountBtn.frame = %@",NSStringFromCGRect(self.accountBtn.frame));
+//    NSLog(@"kWIN_WIDTH %f",kWIN_WIDTH);
 }
 
 - (IBAction)btnClick:(UIButton *)sender {
@@ -38,17 +38,7 @@
 
 }
 
-- (IBAction)accountBtnClick:(UIButton *)sender {
-    NSLog(@"accountBtnClick 结算");
-    if (self.accountBtnClick) {
-        self.accountBtnClick(sender);
-    }
-}
 
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-//{
-//    NSLog(@"-----");
-//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

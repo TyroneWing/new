@@ -251,16 +251,24 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-//    self.navigationController.navigationBar.hidden = YES;
+
+//    [self.navigationController.view sendSubviewToBack:self.navigationController.navigationBar];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
-//    self.navigationController.navigationBar.hidden = NO;
+//    [self.navigationController.view bringSubviewToFront:self.navigationController.navigationBar];
 }
 
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+
+}
 
 
 - (void)didReceiveMemoryWarning {

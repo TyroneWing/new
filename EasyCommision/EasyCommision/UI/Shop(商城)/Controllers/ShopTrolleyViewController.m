@@ -11,6 +11,7 @@
 #import "TrolleyButtom.h"
 #import "Networks.h"
 #import "OrderMsgViewController.h"
+#import "Masonry.h"
 
 @interface ShopTrolleyViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *trolleyTableView;
@@ -30,7 +31,10 @@
     self.navigationItem.title = @"购物车";
     [self.view addSubview:self.trolleyTableView];
     [self.view addSubview:self.trolleyButtom];
-
+    [self.trolleyButtom mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(60);
+    }];
 }
 
 
@@ -125,8 +129,8 @@
 {
     if (_trolleyButtom == nil) {
         _trolleyButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TrolleyButtom class]) owner:nil options:nil] firstObject];
-        _trolleyButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
-        _trolleyButtom.userInteractionEnabled = YES;
+//        _trolleyButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
+//        _trolleyButtom.userInteractionEnabled = YES;
         __weak __typeof__(self) weakSelf = self;
         [_trolleyButtom setAccountBtnClick:^(UIButton *btn){
             __strong __typeof(self) strongSelf = weakSelf;

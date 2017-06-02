@@ -276,6 +276,7 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 
 //首页（商城）
 - (IBAction)shopHomeBtnClick:(UIButton *)sender {
+    [self.view endEditing:YES];
     self.shopStoresBtn.selected = NO;
     self.shopIntelligentBtn.selected = NO;
     sender.selected = YES;
@@ -285,6 +286,7 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 
 //家居百货
 - (IBAction)shopStoresBtnClick:(UIButton *)sender {
+    [self.view endEditing:YES];
     self.shopHomeBtn.selected = NO;
     self.shopIntelligentBtn.selected = NO;
     sender.selected = YES;
@@ -294,6 +296,7 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 
 //智能家居
 - (IBAction)shopIntelligentBtnClick:(UIButton *)sender {
+    [self.view endEditing:YES];
     self.shopStoresBtn.selected = NO;
     self.shopHomeBtn.selected = NO;
     sender.selected = YES;

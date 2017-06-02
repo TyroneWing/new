@@ -12,6 +12,8 @@
 #import "hourlyOrderCell.h"
 #import "shopOrderCell.h"
 #import "OrderShopViewController.h"
+#import "OrderHourlyViewController.h"
+#import "OrderMonthlyViewController.h"
 
 typedef enum : NSUInteger {
     orderMonthly,//住家工订单
@@ -39,7 +41,7 @@ typedef enum : NSUInteger {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+
     [self settingNavigationbar];
     self.orderType = orderMonthly;
     [self dataTest];
@@ -95,9 +97,14 @@ typedef enum : NSUInteger {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.orderType == orderMonthly) {
-
+        OrderMonthlyViewController *vc= [[OrderMonthlyViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+        
     } else if (self.orderType == orderhourly) {
-
+        OrderHourlyViewController *vc= [[OrderHourlyViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
         OrderShopViewController *vc= [[OrderShopViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;

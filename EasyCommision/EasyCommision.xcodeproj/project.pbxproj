@@ -28,7 +28,12 @@
 		05656AFC1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AED1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		05656AFD1EE11336008E92A9 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AEF1EE11336008E92A9 /* View+MASAdditions.m */; };
 		05656AFE1EE11336008E92A9 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AF21EE11336008E92A9 /* ViewController+MASAdditions.m */; };
-		05656AFF1EE11336008E92A9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05656AF31EE11336008E92A9 /* README.md */; };
+		05656B021EE1173D008E92A9 /* OrderMonthlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656B011EE1173D008E92A9 /* OrderMonthlyViewController.m */; };
+		05656B051EE11756008E92A9 /* OrderHourlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656B041EE11756008E92A9 /* OrderHourlyViewController.m */; };
+		05656B091EE1316A008E92A9 /* OrderLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656B071EE1316A008E92A9 /* OrderLabelCell.m */; };
+		05656B0A1EE1316A008E92A9 /* OrderLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05656B081EE1316A008E92A9 /* OrderLabelCell.xib */; };
+		05656B0E1EE138D1008E92A9 /* OrderHourlyDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656B0C1EE138D1008E92A9 /* OrderHourlyDetailCell.m */; };
+		05656B0F1EE138D1008E92A9 /* OrderHourlyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05656B0D1EE138D1008E92A9 /* OrderHourlyDetailCell.xib */; };
 		05686D171EE0039C001DBA73 /* OrderMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05686D161EE0039C001DBA73 /* OrderMsgViewController.m */; };
 		056C02721EE0148F0058D334 /* OrderSectionHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C02701EE0148F0058D334 /* OrderSectionHeadCell.m */; };
 		056C02731EE0148F0058D334 /* OrderSectionHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056C02711EE0148F0058D334 /* OrderSectionHeadCell.xib */; };
@@ -41,8 +46,6 @@
 		05A3D1311EE0FE28006AEE85 /* OrderShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */; };
 		05A3D1351EE0FFC4006AEE85 /* OrderShopNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */; };
 		05A3D1361EE0FFC4006AEE85 /* OrderShopNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */; };
-		05A3D13A1EE0FFD5006AEE85 /* OrderShopPeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */; };
-		05A3D13B1EE0FFD5006AEE85 /* OrderShopPeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */; };
 		05A3D13F1EE0FFE8006AEE85 /* OrderShopDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */; };
 		05A3D1401EE0FFE8006AEE85 /* OrderShopDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */; };
 		05B51E151EDFBD30005CD4B9 /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B51E141EDFBD30005CD4B9 /* ShopDetailViewController.m */; };
@@ -201,7 +204,16 @@
 		05656AF01EE11336008E92A9 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		05656AF11EE11336008E92A9 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		05656AF21EE11336008E92A9 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		05656AF31EE11336008E92A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05656B001EE1173D008E92A9 /* OrderMonthlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMonthlyViewController.h; sourceTree = "<group>"; };
+		05656B011EE1173D008E92A9 /* OrderMonthlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMonthlyViewController.m; sourceTree = "<group>"; };
+		05656B031EE11756008E92A9 /* OrderHourlyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHourlyViewController.h; sourceTree = "<group>"; };
+		05656B041EE11756008E92A9 /* OrderHourlyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHourlyViewController.m; sourceTree = "<group>"; };
+		05656B061EE1316A008E92A9 /* OrderLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderLabelCell.h; sourceTree = "<group>"; };
+		05656B071EE1316A008E92A9 /* OrderLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderLabelCell.m; sourceTree = "<group>"; };
+		05656B081EE1316A008E92A9 /* OrderLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderLabelCell.xib; sourceTree = "<group>"; };
+		05656B0B1EE138D1008E92A9 /* OrderHourlyDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHourlyDetailCell.h; sourceTree = "<group>"; };
+		05656B0C1EE138D1008E92A9 /* OrderHourlyDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHourlyDetailCell.m; sourceTree = "<group>"; };
+		05656B0D1EE138D1008E92A9 /* OrderHourlyDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderHourlyDetailCell.xib; sourceTree = "<group>"; };
 		05686D151EE0039C001DBA73 /* OrderMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMsgViewController.h; sourceTree = "<group>"; };
 		05686D161EE0039C001DBA73 /* OrderMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMsgViewController.m; sourceTree = "<group>"; };
 		056C026F1EE0148F0058D334 /* OrderSectionHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderSectionHeadCell.h; sourceTree = "<group>"; };
@@ -221,9 +233,6 @@
 		05A3D1321EE0FFC4006AEE85 /* OrderShopNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopNumberCell.h; sourceTree = "<group>"; };
 		05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopNumberCell.m; sourceTree = "<group>"; };
 		05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopNumberCell.xib; sourceTree = "<group>"; };
-		05A3D1371EE0FFD5006AEE85 /* OrderShopPeopleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopPeopleCell.h; sourceTree = "<group>"; };
-		05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopPeopleCell.m; sourceTree = "<group>"; };
-		05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopPeopleCell.xib; sourceTree = "<group>"; };
 		05A3D13C1EE0FFE8006AEE85 /* OrderShopDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopDetailCell.h; sourceTree = "<group>"; };
 		05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopDetailCell.m; sourceTree = "<group>"; };
 		05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopDetailCell.xib; sourceTree = "<group>"; };
@@ -425,7 +434,6 @@
 			children = (
 				05656AD81EE11336008E92A9 /* LICENSE */,
 				05656AD91EE11336008E92A9 /* Masonry */,
-				05656AF31EE11336008E92A9 /* README.md */,
 			);
 			path = Masonry;
 			sourceTree = "<group>";
@@ -792,6 +800,10 @@
 				199E86FE1ECD8569004D8A37 /* OrderPaySuccessViewController.xib */,
 				05A3D12F1EE0FE28006AEE85 /* OrderShopViewController.h */,
 				05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */,
+				05656B001EE1173D008E92A9 /* OrderMonthlyViewController.h */,
+				05656B011EE1173D008E92A9 /* OrderMonthlyViewController.m */,
+				05656B031EE11756008E92A9 /* OrderHourlyViewController.h */,
+				05656B041EE11756008E92A9 /* OrderHourlyViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -818,15 +830,18 @@
 				05A3D1321EE0FFC4006AEE85 /* OrderShopNumberCell.h */,
 				05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */,
 				05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */,
-				05A3D1371EE0FFD5006AEE85 /* OrderShopPeopleCell.h */,
-				05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */,
-				05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */,
 				05A3D13C1EE0FFE8006AEE85 /* OrderShopDetailCell.h */,
 				05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */,
 				05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */,
 				05656AD21EE10D2D008E92A9 /* OrderShopButtom.h */,
 				05656AD31EE10D2D008E92A9 /* OrderShopButtom.m */,
 				05656AD51EE10D38008E92A9 /* OrderShopButtom.xib */,
+				05656B061EE1316A008E92A9 /* OrderLabelCell.h */,
+				05656B071EE1316A008E92A9 /* OrderLabelCell.m */,
+				05656B081EE1316A008E92A9 /* OrderLabelCell.xib */,
+				05656B0B1EE138D1008E92A9 /* OrderHourlyDetailCell.h */,
+				05656B0C1EE138D1008E92A9 /* OrderHourlyDetailCell.m */,
+				05656B0D1EE138D1008E92A9 /* OrderHourlyDetailCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1126,7 +1141,6 @@
 				199E86F11ECD74ED004D8A37 /* ForgetPWViewController.xib in Resources */,
 				19A76EDF1ED682EC0034D78B /* HomeHeadCell.xib in Resources */,
 				199E86E71ECD2C8A004D8A37 /* RegisterViewController.xib in Resources */,
-				05A3D13B1EE0FFD5006AEE85 /* OrderShopPeopleCell.xib in Resources */,
 				19D52CAA1ECED4040072EE00 /* OrderViewController.xib in Resources */,
 				199E87001ECD8569004D8A37 /* OrderPaySuccessViewController.xib in Resources */,
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
@@ -1138,12 +1152,14 @@
 				1978C5671ED527CB00C1ADFC /* HomeKnowledgeCell.xib in Resources */,
 				195962391ECBF1FC00962133 /* Assets.xcassets in Resources */,
 				056C027D1EE016EA0058D334 /* OrderDetailCell.xib in Resources */,
+				05656B0F1EE138D1008E92A9 /* OrderHourlyDetailCell.xib in Resources */,
 				195962371ECBF1FC00962133 /* Main.storyboard in Resources */,
 				19AD8A661ED804940069C9F7 /* HomeNavibarView.xib in Resources */,
 				056C02731EE0148F0058D334 /* OrderSectionHeadCell.xib in Resources */,
 				19D52CAF1ECEDB760072EE00 /* monthlyOrderCell.xib in Resources */,
 				05656AF41EE11336008E92A9 /* LICENSE in Resources */,
 				19D52CA01ECEA0F00072EE00 /* MineHeadCell.xib in Resources */,
+				05656B0A1EE1316A008E92A9 /* OrderLabelCell.xib in Resources */,
 				195963471ECC3B3800962133 /* LoginViewController.xib in Resources */,
 				0533D2371EE0F27700C98AB2 /* OrderAddressCell.xib in Resources */,
 				199E86FB1ECD79A9004D8A37 /* ResetPWSuccessView.xib in Resources */,
@@ -1248,6 +1264,8 @@
 				199E86F01ECD74ED004D8A37 /* ForgetPWViewController.m in Sources */,
 				05656AF51EE11336008E92A9 /* MASCompositeConstraint.m in Sources */,
 				056C02771EE016D50058D334 /* OrderPriceCell.m in Sources */,
+				05656B051EE11756008E92A9 /* OrderHourlyViewController.m in Sources */,
+				05656B091EE1316A008E92A9 /* OrderLabelCell.m in Sources */,
 				05686D171EE0039C001DBA73 /* OrderMsgViewController.m in Sources */,
 				1978C58C1ED66A9700C1ADFC /* SDImageCache.m in Sources */,
 				195963461ECC3B3800962133 /* LoginViewController.m in Sources */,
@@ -1263,7 +1281,6 @@
 				199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */,
 				05656AF81EE11336008E92A9 /* MASLayoutConstraint.m in Sources */,
 				1978C5951ED66A9700C1ADFC /* UIImage+MultiFormat.m in Sources */,
-				05A3D13A1EE0FFD5006AEE85 /* OrderShopPeopleCell.m in Sources */,
 				19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */,
 				05A3D1351EE0FFC4006AEE85 /* OrderShopNumberCell.m in Sources */,
 				05656AF91EE11336008E92A9 /* MASViewAttribute.m in Sources */,
@@ -1271,6 +1288,7 @@
 				19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */,
 				19AD8A6A1ED80FB10069C9F7 /* MonthlyServentTypeController.m in Sources */,
 				05656AF71EE11336008E92A9 /* MASConstraintMaker.m in Sources */,
+				05656B0E1EE138D1008E92A9 /* OrderHourlyDetailCell.m in Sources */,
 				1978C5661ED527CB00C1ADFC /* HomeKnowledgeCell.m in Sources */,
 				19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */,
 				19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */,
@@ -1281,12 +1299,12 @@
 				1959633C1ECC2F2F00962133 /* BaseNavigationViewController.m in Sources */,
 				1978C5991ED66A9700C1ADFC /* UIView+WebCacheOperation.m in Sources */,
 				1978C5921ED66A9700C1ADFC /* SDWebImagePrefetcher.m in Sources */,
+				05656B021EE1173D008E92A9 /* OrderMonthlyViewController.m in Sources */,
 				1959622E1ECBF1FC00962133 /* main.m in Sources */,
 				199E86FF1ECD8569004D8A37 /* OrderPaySuccessViewController.m in Sources */,
 				195963961ECC4C8800962133 /* UIView+Extension.m in Sources */,
 				05656AFA1EE11336008E92A9 /* MASViewConstraint.m in Sources */,
 				05656AFB1EE11336008E92A9 /* NSArray+MASAdditions.m in Sources */,
-				05656AFF1EE11336008E92A9 /* README.md in Sources */,
 				05656AFE1EE11336008E92A9 /* ViewController+MASAdditions.m in Sources */,
 				1978C5941ED66A9700C1ADFC /* UIImage+GIF.m in Sources */,
 				19A217771ED0286F00A5F7F8 /* hourlyServentCell.m in Sources */,
