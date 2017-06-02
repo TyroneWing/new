@@ -12,10 +12,14 @@
 #import "TrolleyCell.h"
 #import "OrderDetailCell.h"
 #import "OrderPriceCell.h"
+#import "OrdernextCell.h"
+#import "OrderAddressCell.h"
+#import "OrderButtom.h"
 
 @interface OrderMsgViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *orderTableView;
 @property (nonatomic,strong) NSArray *orderTypeArray;
+@property (nonatomic,strong) OrderButtom *orderButtom;
 
 @end
 
@@ -28,6 +32,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"填写订单";
     [self.view addSubview:self.orderTableView];
+    [self.view addSubview:self.orderButtom];
+
 }
 
 
@@ -78,6 +84,21 @@
 
         return cell;
     }
+    if (indexPath.section == 2 && indexPath.row == 1) {
+        OrdernextCell *cell = [OrdernextCell cellWithTableView:tableView];
+        cell.orderNextLabel.text = @"无优惠券可用";
+        return cell;
+    }
+
+    if (indexPath.section == 3 && indexPath.row == 1) {
+        OrdernextCell *cell = [OrdernextCell cellWithTableView:tableView];
+        cell.orderNextLabel.text = @"微信";
+        return cell;
+    }
+    if (indexPath.section == 4 && indexPath.row == 1) {
+        OrderAddressCell *cell = [OrderAddressCell cellWithTableView:tableView];
+        return cell;
+    }
 
     TrolleyCell *cell = [TrolleyCell cellWithTableView:tableView];
     return cell;
@@ -122,7 +143,7 @@
         _orderTableView.dataSource = self;
         _orderTableView.estimatedRowHeight = 120.0;
         _orderTableView.rowHeight = UITableViewAutomaticDimension;
-        //        _trolleyTableView.showsVerticalScrollIndicator = NO;
+        _orderTableView.showsVerticalScrollIndicator = NO;
         _orderTableView.separatorStyle = NO;
         _orderTableView.tableFooterView = [[UIView alloc] init];
         _orderTableView.bounces = NO;
@@ -133,22 +154,18 @@
 }
 
 
-//- (TrolleyButtom *)trolleyButtom
-//{
-//    if (_trolleyButtom == nil) {
-//        _trolleyButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TrolleyButtom class]) owner:nil options:nil] firstObject];
-//        _trolleyButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, _trolleyButtom.frame.size.height);
-//        _trolleyButtom.userInteractionEnabled = YES;
+- (OrderButtom *)orderButtom
+{
+    if (_orderButtom == nil) {
+        _orderButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OrderButtom class]) owner:nil options:nil] firstObject];
+        _orderButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
+        _orderButtom.userInteractionEnabled = YES;
 //        __weak __typeof__(self) weakSelf = self;
-//
-//        [_trolleyButtom setAccountBtnClick:^(UIButton *btn){
-//            __strong __typeof(self) strongSelf = weakSelf;
-//            OrderMsgViewController *vc = [[OrderMsgViewController alloc] init];
-//            [strongSelf.navigationController pushViewController:vc animated:YES];
-//        }];
-//    }
-//    return _trolleyButtom;
-//}
+
+        [self.view layoutIfNeeded];
+    }
+    return _orderButtom;
+}
 
 
 - (void)didReceiveMemoryWarning {

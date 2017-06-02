@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface OrderPriceCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIView *lineView;
+
 @property (strong, nonatomic) IBOutlet UILabel *orderPriceTitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *orderPriceLabel;
 + (instancetype)cellWithTableView:(UITableView *)tableView;

@@ -36,26 +36,26 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喷雾免手洗平板拖把" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBD-fE-mC9">
-                        <rect key="frame" x="210" y="15" width="178" height="19.5"/>
+                        <rect key="frame" x="210" y="15" width="178" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥169.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECZ-gI-9dB">
-                        <rect key="frame" x="210" y="39" width="74" height="21.5"/>
+                        <rect key="frame" x="210" y="40" width="74" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-Tn-mgA">
-                        <rect key="frame" x="15" y="132.5" width="373" height="1"/>
+                        <rect key="frame" x="15" y="133" width="373" height="1"/>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="qfQ-Lr-8h2"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7X-Jv-GIU">
-                        <rect key="frame" x="363" y="89.5" width="25" height="25"/>
+                        <rect key="frame" x="363" y="90" width="25" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="Nss-l9-A2T"/>
                             <constraint firstAttribute="width" constant="25" id="Yyx-Id-D0n"/>
@@ -64,13 +64,13 @@
                         <state key="selected" image="check_is_icon"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Bm-bwp">
-                        <rect key="frame" x="342" y="93.5" width="16" height="18"/>
+                        <rect key="frame" x="342" y="94" width="16" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRp-1e-gT9">
-                        <rect key="frame" x="312" y="89.5" width="25" height="25"/>
+                        <rect key="frame" x="312" y="90" width="25" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="25" id="6Zb-3i-DTp"/>
                             <constraint firstAttribute="height" constant="25" id="Woi-He-cA3"/>

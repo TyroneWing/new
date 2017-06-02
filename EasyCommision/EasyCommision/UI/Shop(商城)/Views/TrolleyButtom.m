@@ -32,6 +32,9 @@
 - (IBAction)btnClick:(UIButton *)sender {
 
     NSLog(@"accountBtnClick 结算");
+    if (self.accountBtnClick) {
+        self.accountBtnClick(sender);
+    }
 
 }
 
@@ -42,10 +45,10 @@
     }
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"-----");
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//    NSLog(@"-----");
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

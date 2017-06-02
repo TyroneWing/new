@@ -125,15 +125,15 @@
 {
     if (_trolleyButtom == nil) {
         _trolleyButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([TrolleyButtom class]) owner:nil options:nil] firstObject];
-        _trolleyButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, _trolleyButtom.frame.size.height);
+        _trolleyButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
         _trolleyButtom.userInteractionEnabled = YES;
         __weak __typeof__(self) weakSelf = self;
-        
         [_trolleyButtom setAccountBtnClick:^(UIButton *btn){
             __strong __typeof(self) strongSelf = weakSelf;
             OrderMsgViewController *vc = [[OrderMsgViewController alloc] init];
             [strongSelf.navigationController pushViewController:vc animated:YES];
         }];
+        [self.view layoutIfNeeded];
     }
     return _trolleyButtom;
 }
@@ -141,8 +141,8 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     NSLog(@"vc");
-    OrderMsgViewController *vc = [[OrderMsgViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    OrderMsgViewController *vc = [[OrderMsgViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

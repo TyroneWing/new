@@ -9,8 +9,26 @@
 /* Begin PBXBuildFile section */
 		05121C491EDFF10F002CF3E9 /* TrolleyButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 05121C481EDFF10F002CF3E9 /* TrolleyButtom.m */; };
 		05121C4B1EDFF11D002CF3E9 /* TrolleyButtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05121C4A1EDFF11D002CF3E9 /* TrolleyButtom.xib */; };
+		0533D2311EE0F0E800C98AB2 /* OrdernextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D22F1EE0F0E800C98AB2 /* OrdernextCell.m */; };
+		0533D2321EE0F0E800C98AB2 /* OrdernextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0533D2301EE0F0E800C98AB2 /* OrdernextCell.xib */; };
+		0533D2361EE0F27700C98AB2 /* OrderAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533D2341EE0F27700C98AB2 /* OrderAddressCell.m */; };
+		0533D2371EE0F27700C98AB2 /* OrderAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0533D2351EE0F27700C98AB2 /* OrderAddressCell.xib */; };
 		05606C741EDFC79600A63572 /* TrolleyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05606C721EDFC79600A63572 /* TrolleyCell.m */; };
 		05606C751EDFC79600A63572 /* TrolleyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05606C731EDFC79600A63572 /* TrolleyCell.xib */; };
+		05656AD41EE10D2D008E92A9 /* OrderShopButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AD31EE10D2D008E92A9 /* OrderShopButtom.m */; };
+		05656AD61EE10D38008E92A9 /* OrderShopButtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05656AD51EE10D38008E92A9 /* OrderShopButtom.xib */; };
+		05656AF41EE11336008E92A9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 05656AD81EE11336008E92A9 /* LICENSE */; };
+		05656AF51EE11336008E92A9 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656ADB1EE11336008E92A9 /* MASCompositeConstraint.m */; };
+		05656AF61EE11336008E92A9 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656ADE1EE11336008E92A9 /* MASConstraint.m */; };
+		05656AF71EE11336008E92A9 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AE01EE11336008E92A9 /* MASConstraintMaker.m */; };
+		05656AF81EE11336008E92A9 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AE21EE11336008E92A9 /* MASLayoutConstraint.m */; };
+		05656AF91EE11336008E92A9 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AE61EE11336008E92A9 /* MASViewAttribute.m */; };
+		05656AFA1EE11336008E92A9 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AE81EE11336008E92A9 /* MASViewConstraint.m */; };
+		05656AFB1EE11336008E92A9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AEA1EE11336008E92A9 /* NSArray+MASAdditions.m */; };
+		05656AFC1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AED1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		05656AFD1EE11336008E92A9 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AEF1EE11336008E92A9 /* View+MASAdditions.m */; };
+		05656AFE1EE11336008E92A9 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05656AF21EE11336008E92A9 /* ViewController+MASAdditions.m */; };
+		05656AFF1EE11336008E92A9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 05656AF31EE11336008E92A9 /* README.md */; };
 		05686D171EE0039C001DBA73 /* OrderMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05686D161EE0039C001DBA73 /* OrderMsgViewController.m */; };
 		056C02721EE0148F0058D334 /* OrderSectionHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C02701EE0148F0058D334 /* OrderSectionHeadCell.m */; };
 		056C02731EE0148F0058D334 /* OrderSectionHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056C02711EE0148F0058D334 /* OrderSectionHeadCell.xib */; };
@@ -18,6 +36,15 @@
 		056C02781EE016D50058D334 /* OrderPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056C02761EE016D50058D334 /* OrderPriceCell.xib */; };
 		056C027C1EE016EA0058D334 /* OrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 056C027A1EE016EA0058D334 /* OrderDetailCell.m */; };
 		056C027D1EE016EA0058D334 /* OrderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 056C027B1EE016EA0058D334 /* OrderDetailCell.xib */; };
+		05A3D12C1EE0F4BD006AEE85 /* OrderButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D12B1EE0F4BD006AEE85 /* OrderButtom.m */; };
+		05A3D12E1EE0F4C8006AEE85 /* OrderButtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D12D1EE0F4C8006AEE85 /* OrderButtom.xib */; };
+		05A3D1311EE0FE28006AEE85 /* OrderShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */; };
+		05A3D1351EE0FFC4006AEE85 /* OrderShopNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */; };
+		05A3D1361EE0FFC4006AEE85 /* OrderShopNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */; };
+		05A3D13A1EE0FFD5006AEE85 /* OrderShopPeopleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */; };
+		05A3D13B1EE0FFD5006AEE85 /* OrderShopPeopleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */; };
+		05A3D13F1EE0FFE8006AEE85 /* OrderShopDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */; };
+		05A3D1401EE0FFE8006AEE85 /* OrderShopDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */; };
 		05B51E151EDFBD30005CD4B9 /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B51E141EDFBD30005CD4B9 /* ShopDetailViewController.m */; };
 		05B51E191EDFC44F005CD4B9 /* ShopTrolleyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B51E171EDFC44F005CD4B9 /* ShopTrolleyViewController.m */; };
 		1959622E1ECBF1FC00962133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1959622D1ECBF1FC00962133 /* main.m */; };
@@ -136,9 +163,45 @@
 		05121C471EDFF10F002CF3E9 /* TrolleyButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrolleyButtom.h; sourceTree = "<group>"; };
 		05121C481EDFF10F002CF3E9 /* TrolleyButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrolleyButtom.m; sourceTree = "<group>"; };
 		05121C4A1EDFF11D002CF3E9 /* TrolleyButtom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrolleyButtom.xib; sourceTree = "<group>"; };
+		0533D22E1EE0F0E800C98AB2 /* OrdernextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdernextCell.h; sourceTree = "<group>"; };
+		0533D22F1EE0F0E800C98AB2 /* OrdernextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdernextCell.m; sourceTree = "<group>"; };
+		0533D2301EE0F0E800C98AB2 /* OrdernextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdernextCell.xib; sourceTree = "<group>"; };
+		0533D2331EE0F27700C98AB2 /* OrderAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderAddressCell.h; sourceTree = "<group>"; };
+		0533D2341EE0F27700C98AB2 /* OrderAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderAddressCell.m; sourceTree = "<group>"; };
+		0533D2351EE0F27700C98AB2 /* OrderAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderAddressCell.xib; sourceTree = "<group>"; };
 		05606C711EDFC79600A63572 /* TrolleyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrolleyCell.h; sourceTree = "<group>"; };
 		05606C721EDFC79600A63572 /* TrolleyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrolleyCell.m; sourceTree = "<group>"; };
 		05606C731EDFC79600A63572 /* TrolleyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrolleyCell.xib; sourceTree = "<group>"; };
+		05656AD21EE10D2D008E92A9 /* OrderShopButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopButtom.h; sourceTree = "<group>"; };
+		05656AD31EE10D2D008E92A9 /* OrderShopButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopButtom.m; sourceTree = "<group>"; };
+		05656AD51EE10D38008E92A9 /* OrderShopButtom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopButtom.xib; sourceTree = "<group>"; };
+		05656AD81EE11336008E92A9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		05656ADA1EE11336008E92A9 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		05656ADB1EE11336008E92A9 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		05656ADC1EE11336008E92A9 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		05656ADD1EE11336008E92A9 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		05656ADE1EE11336008E92A9 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		05656ADF1EE11336008E92A9 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		05656AE01EE11336008E92A9 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		05656AE11EE11336008E92A9 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		05656AE21EE11336008E92A9 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		05656AE31EE11336008E92A9 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		05656AE41EE11336008E92A9 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		05656AE51EE11336008E92A9 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		05656AE61EE11336008E92A9 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		05656AE71EE11336008E92A9 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		05656AE81EE11336008E92A9 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		05656AE91EE11336008E92A9 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		05656AEA1EE11336008E92A9 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		05656AEB1EE11336008E92A9 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		05656AEC1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		05656AED1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		05656AEE1EE11336008E92A9 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		05656AEF1EE11336008E92A9 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		05656AF01EE11336008E92A9 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		05656AF11EE11336008E92A9 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		05656AF21EE11336008E92A9 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		05656AF31EE11336008E92A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		05686D151EE0039C001DBA73 /* OrderMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMsgViewController.h; sourceTree = "<group>"; };
 		05686D161EE0039C001DBA73 /* OrderMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMsgViewController.m; sourceTree = "<group>"; };
 		056C026F1EE0148F0058D334 /* OrderSectionHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderSectionHeadCell.h; sourceTree = "<group>"; };
@@ -150,6 +213,20 @@
 		056C02791EE016EA0058D334 /* OrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailCell.h; sourceTree = "<group>"; };
 		056C027A1EE016EA0058D334 /* OrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailCell.m; sourceTree = "<group>"; };
 		056C027B1EE016EA0058D334 /* OrderDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailCell.xib; sourceTree = "<group>"; };
+		05A3D12A1EE0F4BD006AEE85 /* OrderButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderButtom.h; sourceTree = "<group>"; };
+		05A3D12B1EE0F4BD006AEE85 /* OrderButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderButtom.m; sourceTree = "<group>"; };
+		05A3D12D1EE0F4C8006AEE85 /* OrderButtom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderButtom.xib; sourceTree = "<group>"; };
+		05A3D12F1EE0FE28006AEE85 /* OrderShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopViewController.h; sourceTree = "<group>"; };
+		05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopViewController.m; sourceTree = "<group>"; };
+		05A3D1321EE0FFC4006AEE85 /* OrderShopNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopNumberCell.h; sourceTree = "<group>"; };
+		05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopNumberCell.m; sourceTree = "<group>"; };
+		05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopNumberCell.xib; sourceTree = "<group>"; };
+		05A3D1371EE0FFD5006AEE85 /* OrderShopPeopleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopPeopleCell.h; sourceTree = "<group>"; };
+		05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopPeopleCell.m; sourceTree = "<group>"; };
+		05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopPeopleCell.xib; sourceTree = "<group>"; };
+		05A3D13C1EE0FFE8006AEE85 /* OrderShopDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderShopDetailCell.h; sourceTree = "<group>"; };
+		05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderShopDetailCell.m; sourceTree = "<group>"; };
+		05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderShopDetailCell.xib; sourceTree = "<group>"; };
 		05B51E131EDFBD30005CD4B9 /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
 		05B51E141EDFBD30005CD4B9 /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
 		05B51E161EDFC44F005CD4B9 /* ShopTrolleyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTrolleyViewController.h; sourceTree = "<group>"; };
@@ -343,6 +420,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05656AD71EE11336008E92A9 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				05656AD81EE11336008E92A9 /* LICENSE */,
+				05656AD91EE11336008E92A9 /* Masonry */,
+				05656AF31EE11336008E92A9 /* README.md */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		05656AD91EE11336008E92A9 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				05656ADA1EE11336008E92A9 /* MASCompositeConstraint.h */,
+				05656ADB1EE11336008E92A9 /* MASCompositeConstraint.m */,
+				05656ADC1EE11336008E92A9 /* MASConstraint+Private.h */,
+				05656ADD1EE11336008E92A9 /* MASConstraint.h */,
+				05656ADE1EE11336008E92A9 /* MASConstraint.m */,
+				05656ADF1EE11336008E92A9 /* MASConstraintMaker.h */,
+				05656AE01EE11336008E92A9 /* MASConstraintMaker.m */,
+				05656AE11EE11336008E92A9 /* MASLayoutConstraint.h */,
+				05656AE21EE11336008E92A9 /* MASLayoutConstraint.m */,
+				05656AE31EE11336008E92A9 /* Masonry.h */,
+				05656AE41EE11336008E92A9 /* MASUtilities.h */,
+				05656AE51EE11336008E92A9 /* MASViewAttribute.h */,
+				05656AE61EE11336008E92A9 /* MASViewAttribute.m */,
+				05656AE71EE11336008E92A9 /* MASViewConstraint.h */,
+				05656AE81EE11336008E92A9 /* MASViewConstraint.m */,
+				05656AE91EE11336008E92A9 /* NSArray+MASAdditions.h */,
+				05656AEA1EE11336008E92A9 /* NSArray+MASAdditions.m */,
+				05656AEB1EE11336008E92A9 /* NSArray+MASShorthandAdditions.h */,
+				05656AEC1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				05656AED1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				05656AEE1EE11336008E92A9 /* View+MASAdditions.h */,
+				05656AEF1EE11336008E92A9 /* View+MASAdditions.m */,
+				05656AF01EE11336008E92A9 /* View+MASShorthandAdditions.h */,
+				05656AF11EE11336008E92A9 /* ViewController+MASAdditions.h */,
+				05656AF21EE11336008E92A9 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
 		195962201ECBF1FC00962133 = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +535,7 @@
 		1959625F1ECBF44800962133 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				05656AD71EE11336008E92A9 /* Masonry */,
 				1978C5681ED66A9700C1ADFC /* SDWebImage */,
 			);
 			path = Tools;
@@ -670,6 +790,8 @@
 				199E86FC1ECD8569004D8A37 /* OrderPaySuccessViewController.h */,
 				199E86FD1ECD8569004D8A37 /* OrderPaySuccessViewController.m */,
 				199E86FE1ECD8569004D8A37 /* OrderPaySuccessViewController.xib */,
+				05A3D12F1EE0FE28006AEE85 /* OrderShopViewController.h */,
+				05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -693,6 +815,18 @@
 				19D52CB51ECEDB9E0072EE00 /* shopOrderCell.h */,
 				19D52CB61ECEDB9E0072EE00 /* shopOrderCell.m */,
 				19D52CB71ECEDB9E0072EE00 /* shopOrderCell.xib */,
+				05A3D1321EE0FFC4006AEE85 /* OrderShopNumberCell.h */,
+				05A3D1331EE0FFC4006AEE85 /* OrderShopNumberCell.m */,
+				05A3D1341EE0FFC4006AEE85 /* OrderShopNumberCell.xib */,
+				05A3D1371EE0FFD5006AEE85 /* OrderShopPeopleCell.h */,
+				05A3D1381EE0FFD5006AEE85 /* OrderShopPeopleCell.m */,
+				05A3D1391EE0FFD5006AEE85 /* OrderShopPeopleCell.xib */,
+				05A3D13C1EE0FFE8006AEE85 /* OrderShopDetailCell.h */,
+				05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */,
+				05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */,
+				05656AD21EE10D2D008E92A9 /* OrderShopButtom.h */,
+				05656AD31EE10D2D008E92A9 /* OrderShopButtom.m */,
+				05656AD51EE10D38008E92A9 /* OrderShopButtom.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -751,9 +885,18 @@
 				056C02741EE016D50058D334 /* OrderPriceCell.h */,
 				056C02751EE016D50058D334 /* OrderPriceCell.m */,
 				056C02761EE016D50058D334 /* OrderPriceCell.xib */,
+				0533D22E1EE0F0E800C98AB2 /* OrdernextCell.h */,
+				0533D22F1EE0F0E800C98AB2 /* OrdernextCell.m */,
+				0533D2301EE0F0E800C98AB2 /* OrdernextCell.xib */,
 				056C02791EE016EA0058D334 /* OrderDetailCell.h */,
 				056C027A1EE016EA0058D334 /* OrderDetailCell.m */,
 				056C027B1EE016EA0058D334 /* OrderDetailCell.xib */,
+				0533D2331EE0F27700C98AB2 /* OrderAddressCell.h */,
+				0533D2341EE0F27700C98AB2 /* OrderAddressCell.m */,
+				0533D2351EE0F27700C98AB2 /* OrderAddressCell.xib */,
+				05A3D12A1EE0F4BD006AEE85 /* OrderButtom.h */,
+				05A3D12B1EE0F4BD006AEE85 /* OrderButtom.m */,
+				05A3D12D1EE0F4C8006AEE85 /* OrderButtom.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -961,6 +1104,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05656AD61EE10D38008E92A9 /* OrderShopButtom.xib in Resources */,
 				05121C4B1EDFF11D002CF3E9 /* TrolleyButtom.xib in Resources */,
 				05606C751EDFC79600A63572 /* TrolleyCell.xib in Resources */,
 				19A217781ED0286F00A5F7F8 /* hourlyServentCell.xib in Resources */,
@@ -972,18 +1116,23 @@
 				19A217651ECFF0B600A5F7F8 /* ShopHeadView.xib in Resources */,
 				19A217601ECFE21B00A5F7F8 /* ShopCell.xib in Resources */,
 				19CDFB441ECE943A00232F60 /* AddressCell.xib in Resources */,
+				0533D2321EE0F0E800C98AB2 /* OrdernextCell.xib in Resources */,
 				19D52CB91ECEDB9E0072EE00 /* shopOrderCell.xib in Resources */,
+				05A3D12E1EE0F4C8006AEE85 /* OrderButtom.xib in Resources */,
 				056C02781EE016D50058D334 /* OrderPriceCell.xib in Resources */,
+				05A3D1361EE0FFC4006AEE85 /* OrderShopNumberCell.xib in Resources */,
 				199E87081ECD8C12004D8A37 /* MyMessageCell.xib in Resources */,
 				199E86F61ECD7896004D8A37 /* ResetPWViewController.xib in Resources */,
 				199E86F11ECD74ED004D8A37 /* ForgetPWViewController.xib in Resources */,
 				19A76EDF1ED682EC0034D78B /* HomeHeadCell.xib in Resources */,
 				199E86E71ECD2C8A004D8A37 /* RegisterViewController.xib in Resources */,
+				05A3D13B1EE0FFD5006AEE85 /* OrderShopPeopleCell.xib in Resources */,
 				19D52CAA1ECED4040072EE00 /* OrderViewController.xib in Resources */,
 				199E87001ECD8569004D8A37 /* OrderPaySuccessViewController.xib in Resources */,
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
 				19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */,
 				19A217731ED0267B00A5F7F8 /* MonthlyServentListViewController.xib in Resources */,
+				05A3D1401EE0FFE8006AEE85 /* OrderShopDetailCell.xib in Resources */,
 				1978C5621ED527A600C1ADFC /* HomeTypeCell.xib in Resources */,
 				19A2176E1ED0262300A5F7F8 /* HourlyServantListViewController.xib in Resources */,
 				1978C5671ED527CB00C1ADFC /* HomeKnowledgeCell.xib in Resources */,
@@ -993,8 +1142,10 @@
 				19AD8A661ED804940069C9F7 /* HomeNavibarView.xib in Resources */,
 				056C02731EE0148F0058D334 /* OrderSectionHeadCell.xib in Resources */,
 				19D52CAF1ECEDB760072EE00 /* monthlyOrderCell.xib in Resources */,
+				05656AF41EE11336008E92A9 /* LICENSE in Resources */,
 				19D52CA01ECEA0F00072EE00 /* MineHeadCell.xib in Resources */,
 				195963471ECC3B3800962133 /* LoginViewController.xib in Resources */,
+				0533D2371EE0F27700C98AB2 /* OrderAddressCell.xib in Resources */,
 				199E86FB1ECD79A9004D8A37 /* ResetPWSuccessView.xib in Resources */,
 				19AD8A6B1ED80FB10069C9F7 /* MonthlyServentTypeController.xib in Resources */,
 			);
@@ -1074,10 +1225,12 @@
 				19D52CB31ECEDB8E0072EE00 /* hourlyOrderCell.m in Sources */,
 				19A2175F1ECFE21B00A5F7F8 /* ShopCell.m in Sources */,
 				195962A31ECC010600962133 /* UIColor+HEXString.m in Sources */,
+				05656AF61EE11336008E92A9 /* MASConstraint.m in Sources */,
 				05B51E191EDFC44F005CD4B9 /* ShopTrolleyViewController.m in Sources */,
 				1978C5971ED66A9700C1ADFC /* UIImageView+HighlightedWebCache.m in Sources */,
 				056C02721EE0148F0058D334 /* OrderSectionHeadCell.m in Sources */,
 				199E86EA1ECD3DB0004D8A37 /* RegisterSuccessView.m in Sources */,
+				05656AD41EE10D2D008E92A9 /* OrderShopButtom.m in Sources */,
 				1978C58B1ED66A9700C1ADFC /* NSData+ImageContentType.m in Sources */,
 				1959639A1ECC4CF500962133 /* UIButton+Rect.m in Sources */,
 				199E86F51ECD7896004D8A37 /* ResetPWViewController.m in Sources */,
@@ -1087,31 +1240,41 @@
 				19AD8A641ED804870069C9F7 /* HomeNavibarView.m in Sources */,
 				05121C491EDFF10F002CF3E9 /* TrolleyButtom.m in Sources */,
 				19A2177C1ED0309800A5F7F8 /* monthlyServentCell.m in Sources */,
+				05656AFD1EE11336008E92A9 /* View+MASAdditions.m in Sources */,
 				056C027C1EE016EA0058D334 /* OrderDetailCell.m in Sources */,
 				19D52CAE1ECEDB760072EE00 /* monthlyOrderCell.m in Sources */,
 				1978C58D1ED66A9700C1ADFC /* SDWebImageCompat.m in Sources */,
 				1978C5911ED66A9700C1ADFC /* SDWebImageManager.m in Sources */,
 				199E86F01ECD74ED004D8A37 /* ForgetPWViewController.m in Sources */,
+				05656AF51EE11336008E92A9 /* MASCompositeConstraint.m in Sources */,
 				056C02771EE016D50058D334 /* OrderPriceCell.m in Sources */,
 				05686D171EE0039C001DBA73 /* OrderMsgViewController.m in Sources */,
 				1978C58C1ED66A9700C1ADFC /* SDImageCache.m in Sources */,
 				195963461ECC3B3800962133 /* LoginViewController.m in Sources */,
 				19C700921ED68AE600DF5826 /* HomeHeaderView.m in Sources */,
+				0533D2361EE0F27700C98AB2 /* OrderAddressCell.m in Sources */,
 				1978C58E1ED66A9700C1ADFC /* SDWebImageDecoder.m in Sources */,
 				195962341ECBF1FC00962133 /* ViewController.m in Sources */,
+				05A3D12C1EE0F4BD006AEE85 /* OrderButtom.m in Sources */,
 				195962721ECBF6BA00962133 /* ZYHTTPRequest.m in Sources */,
 				1978C58F1ED66A9700C1ADFC /* SDWebImageDownloader.m in Sources */,
 				19D52CB81ECEDB9E0072EE00 /* shopOrderCell.m in Sources */,
 				19A2176D1ED0262300A5F7F8 /* HourlyServantListViewController.m in Sources */,
 				199E87071ECD8C12004D8A37 /* MyMessageCell.m in Sources */,
+				05656AF81EE11336008E92A9 /* MASLayoutConstraint.m in Sources */,
 				1978C5951ED66A9700C1ADFC /* UIImage+MultiFormat.m in Sources */,
+				05A3D13A1EE0FFD5006AEE85 /* OrderShopPeopleCell.m in Sources */,
 				19A217641ECFF0B600A5F7F8 /* ShopHeadView.m in Sources */,
+				05A3D1351EE0FFC4006AEE85 /* OrderShopNumberCell.m in Sources */,
+				05656AF91EE11336008E92A9 /* MASViewAttribute.m in Sources */,
 				1978C5961ED66A9700C1ADFC /* UIImage+WebP.m in Sources */,
 				19D52C9F1ECEA0F00072EE00 /* MineHeadCell.m in Sources */,
 				19AD8A6A1ED80FB10069C9F7 /* MonthlyServentTypeController.m in Sources */,
+				05656AF71EE11336008E92A9 /* MASConstraintMaker.m in Sources */,
 				1978C5661ED527CB00C1ADFC /* HomeKnowledgeCell.m in Sources */,
 				19A217691ECFF54B00A5F7F8 /* LoopScrollView.m in Sources */,
 				19CDFB431ECE943A00232F60 /* AddressCell.m in Sources */,
+				05A3D13F1EE0FFE8006AEE85 /* OrderShopDetailCell.m in Sources */,
 				195962311ECBF1FC00962133 /* AppDelegate.m in Sources */,
 				199E86E61ECD2C8A004D8A37 /* RegisterViewController.m in Sources */,
 				195962931ECBF96500962133 /* BaseTabBarViewController.m in Sources */,
@@ -1121,14 +1284,21 @@
 				1959622E1ECBF1FC00962133 /* main.m in Sources */,
 				199E86FF1ECD8569004D8A37 /* OrderPaySuccessViewController.m in Sources */,
 				195963961ECC4C8800962133 /* UIView+Extension.m in Sources */,
+				05656AFA1EE11336008E92A9 /* MASViewConstraint.m in Sources */,
+				05656AFB1EE11336008E92A9 /* NSArray+MASAdditions.m in Sources */,
+				05656AFF1EE11336008E92A9 /* README.md in Sources */,
+				05656AFE1EE11336008E92A9 /* ViewController+MASAdditions.m in Sources */,
 				1978C5941ED66A9700C1ADFC /* UIImage+GIF.m in Sources */,
 				19A217771ED0286F00A5F7F8 /* hourlyServentCell.m in Sources */,
 				19D52CA91ECED4040072EE00 /* OrderViewController.m in Sources */,
 				19A217721ED0267B00A5F7F8 /* MonthlyServentListViewController.m in Sources */,
 				05606C741EDFC79600A63572 /* TrolleyCell.m in Sources */,
+				0533D2311EE0F0E800C98AB2 /* OrdernextCell.m in Sources */,
 				1978C58A1ED66A9700C1ADFC /* MKAnnotationView+WebCache.m in Sources */,
+				05A3D1311EE0FE28006AEE85 /* OrderShopViewController.m in Sources */,
 				1959629D1ECBFA8600962133 /* MineViewController.m in Sources */,
 				1978C5901ED66A9700C1ADFC /* SDWebImageDownloaderOperation.m in Sources */,
+				05656AFC1EE11336008E92A9 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				05B51E151EDFBD30005CD4B9 /* ShopDetailViewController.m in Sources */,
 				195962941ECBF96500962133 /* HomeViewController.m in Sources */,
 				1978C5611ED527A600C1ADFC /* HomeTypeCell.m in Sources */,

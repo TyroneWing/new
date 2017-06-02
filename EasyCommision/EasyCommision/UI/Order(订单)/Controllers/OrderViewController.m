@@ -11,11 +11,12 @@
 #import "monthlyOrderCell.h"
 #import "hourlyOrderCell.h"
 #import "shopOrderCell.h"
+#import "OrderShopViewController.h"
 
 typedef enum : NSUInteger {
-    orderMonthly,//住家工
-    orderhourly,//钟点工
-    orderShop,//商品
+    orderMonthly,//住家工订单
+    orderhourly,//钟点工订单
+    orderShop,//商品订单
 } Order;
 
 @interface OrderViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -88,6 +89,19 @@ typedef enum : NSUInteger {
         hourlyOrderCell *cell = [hourlyOrderCell cellWithTableView:tableView];
 
         return cell;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.orderType == orderMonthly) {
+
+    } else if (self.orderType == orderhourly) {
+
+    } else {
+        OrderShopViewController *vc= [[OrderShopViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

@@ -19,26 +19,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_test" translatesAutoresizingMaskIntoConstraints="NO" id="m8i-NU-HTi">
-                        <rect key="frame" x="15" y="15" width="144" height="86.5"/>
+                        <rect key="frame" x="15" y="15" width="144" height="87"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="144" id="2qj-kg-rqg"/>
                             <constraint firstAttribute="height" constant="86.5" id="z2Z-fU-4cP"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="喷雾免手洗平板拖把" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U4-3y-u6O">
-                        <rect key="frame" x="174" y="25" width="147" height="19.5"/>
+                        <rect key="frame" x="174" y="25" width="147" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥169.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIQ-DN-kzt">
-                        <rect key="frame" x="174" y="63" width="74" height="21.5"/>
+                        <rect key="frame" x="174" y="64" width="74" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <color key="textColor" red="0.85882352939999995" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYN-TA-h7v">
-                        <rect key="frame" x="348.5" y="49" width="15.5" height="19.5"/>
+                        <rect key="frame" x="348" y="48.5" width="16" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
