@@ -49,13 +49,23 @@
                         <action selector="payOrderBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="T7M-KN-e0B"/>
                     </connections>
                 </button>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cn6-mM-69B">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LHI-z4-YA7"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Cn6-mM-69B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Hb-K8-dYD"/>
                 <constraint firstItem="AMI-96-Rjc" firstAttribute="leading" secondItem="FVV-oV-TpG" secondAttribute="trailing" constant="15" id="Eqj-bf-LzG"/>
                 <constraint firstItem="AMI-96-Rjc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="KxL-VH-Svc"/>
                 <constraint firstAttribute="trailing" secondItem="AMI-96-Rjc" secondAttribute="trailing" constant="15" id="X8v-65-BaL"/>
                 <constraint firstItem="FVV-oV-TpG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="b63-D2-LCQ"/>
+                <constraint firstItem="Cn6-mM-69B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hXD-U9-q1R"/>
+                <constraint firstAttribute="trailing" secondItem="Cn6-mM-69B" secondAttribute="trailing" id="kZW-vM-lKt"/>
                 <constraint firstItem="FVV-oV-TpG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="ngF-tO-RaU"/>
                 <constraint firstItem="AMI-96-Rjc" firstAttribute="width" secondItem="FVV-oV-TpG" secondAttribute="width" id="uEa-bU-lqO"/>
             </constraints>

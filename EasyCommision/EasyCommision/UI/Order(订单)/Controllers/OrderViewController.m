@@ -89,7 +89,6 @@ typedef enum : NSUInteger {
     } else {
 //        shopOrderCell *cell = [shopOrderCell cellWithTableView:tableView];
         hourlyOrderCell *cell = [hourlyOrderCell cellWithTableView:tableView];
-
         return cell;
     }
 }

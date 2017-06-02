@@ -43,6 +43,13 @@
                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down" translatesAutoresizingMaskIntoConstraints="NO" id="1QP-JS-zkX">
+                        <rect key="frame" x="332" y="19" width="18" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="DNA-cY-ncM"/>
+                            <constraint firstAttribute="width" constant="18" id="Fy0-Y0-AdB"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="U3C-Tz-FNm" firstAttribute="leading" secondItem="uj5-wA-WhP" secondAttribute="trailing" constant="50" id="5KX-JT-dUt"/>
@@ -54,11 +61,16 @@
                     <constraint firstItem="uj5-wA-WhP" firstAttribute="top" secondItem="lX4-f4-IfA" secondAttribute="bottom" constant="15" id="Zoo-b3-pYX"/>
                     <constraint firstAttribute="bottom" secondItem="fMM-lZ-uH5" secondAttribute="bottom" constant="15.5" id="c0W-iO-uA8"/>
                     <constraint firstItem="uj5-wA-WhP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="eEZ-Cv-zKg"/>
+                    <constraint firstItem="1QP-JS-zkX" firstAttribute="top" secondItem="lX4-f4-IfA" secondAttribute="bottom" constant="18" id="mQC-d0-che"/>
                     <constraint firstItem="lX4-f4-IfA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tFq-xO-aRm"/>
                     <constraint firstItem="fMM-lZ-uH5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="umw-ep-Hom"/>
+                    <constraint firstAttribute="trailing" secondItem="1QP-JS-zkX" secondAttribute="trailing" constant="10" id="ySF-Hi-RS1"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="14" y="75.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_down" width="30" height="30"/>
+    </resources>
 </document>

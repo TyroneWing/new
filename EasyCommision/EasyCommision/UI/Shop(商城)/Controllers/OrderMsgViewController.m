@@ -15,6 +15,8 @@
 #import "OrdernextCell.h"
 #import "OrderAddressCell.h"
 #import "OrderButtom.h"
+#import "Masonry.h"
+#import "AddressListViewController.h"
 
 @interface OrderMsgViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *orderTableView;
@@ -33,6 +35,11 @@
     self.navigationItem.title = @"填写订单";
     [self.view addSubview:self.orderTableView];
     [self.view addSubview:self.orderButtom];
+
+    [self.orderButtom mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(60);
+    }];
 
 }
 
@@ -107,7 +114,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    if (indexPath.section == 4 && indexPath.row == 1) {
+        AddressListViewController *vc = [[AddressListViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 
 }
 
@@ -158,11 +168,9 @@
 {
     if (_orderButtom == nil) {
         _orderButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OrderButtom class]) owner:nil options:nil] firstObject];
-        _orderButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
-        _orderButtom.userInteractionEnabled = YES;
+//        _orderButtom.frame = CGRectMake(0, kWIN_HEIGHT - 60 - 64, kWIN_WIDTH, 100);
+//        _orderButtom.userInteractionEnabled = YES;
 //        __weak __typeof__(self) weakSelf = self;
-
-        [self.view layoutIfNeeded];
     }
     return _orderButtom;
 }

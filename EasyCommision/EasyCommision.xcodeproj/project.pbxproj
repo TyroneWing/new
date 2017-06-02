@@ -50,6 +50,8 @@
 		05A3D1401EE0FFE8006AEE85 /* OrderShopDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */; };
 		05B51E151EDFBD30005CD4B9 /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B51E141EDFBD30005CD4B9 /* ShopDetailViewController.m */; };
 		05B51E191EDFC44F005CD4B9 /* ShopTrolleyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B51E171EDFC44F005CD4B9 /* ShopTrolleyViewController.m */; };
+		05F7A62B1EE18DB400ADF118 /* OrderMonthlyButtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F7A62A1EE18DB400ADF118 /* OrderMonthlyButtom.m */; };
+		05F7A62D1EE18DBF00ADF118 /* OrderMonthlyButtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05F7A62C1EE18DBF00ADF118 /* OrderMonthlyButtom.xib */; };
 		1959622E1ECBF1FC00962133 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1959622D1ECBF1FC00962133 /* main.m */; };
 		195962311ECBF1FC00962133 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962301ECBF1FC00962133 /* AppDelegate.m */; };
 		195962341ECBF1FC00962133 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195962331ECBF1FC00962133 /* ViewController.m */; };
@@ -240,6 +242,9 @@
 		05B51E141EDFBD30005CD4B9 /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
 		05B51E161EDFC44F005CD4B9 /* ShopTrolleyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopTrolleyViewController.h; sourceTree = "<group>"; };
 		05B51E171EDFC44F005CD4B9 /* ShopTrolleyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopTrolleyViewController.m; sourceTree = "<group>"; };
+		05F7A6291EE18DB400ADF118 /* OrderMonthlyButtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMonthlyButtom.h; sourceTree = "<group>"; };
+		05F7A62A1EE18DB400ADF118 /* OrderMonthlyButtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMonthlyButtom.m; sourceTree = "<group>"; };
+		05F7A62C1EE18DBF00ADF118 /* OrderMonthlyButtom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderMonthlyButtom.xib; sourceTree = "<group>"; };
 		07AA8D264A5953B39FA2798B /* Pods-EasyCommision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCommision.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCommision/Pods-EasyCommision.release.xcconfig"; sourceTree = "<group>"; };
 		195962291ECBF1FC00962133 /* EasyCommision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCommision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1959622D1ECBF1FC00962133 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -798,12 +803,12 @@
 				199E86FC1ECD8569004D8A37 /* OrderPaySuccessViewController.h */,
 				199E86FD1ECD8569004D8A37 /* OrderPaySuccessViewController.m */,
 				199E86FE1ECD8569004D8A37 /* OrderPaySuccessViewController.xib */,
-				05A3D12F1EE0FE28006AEE85 /* OrderShopViewController.h */,
-				05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */,
 				05656B001EE1173D008E92A9 /* OrderMonthlyViewController.h */,
 				05656B011EE1173D008E92A9 /* OrderMonthlyViewController.m */,
 				05656B031EE11756008E92A9 /* OrderHourlyViewController.h */,
 				05656B041EE11756008E92A9 /* OrderHourlyViewController.m */,
+				05A3D12F1EE0FE28006AEE85 /* OrderShopViewController.h */,
+				05A3D1301EE0FE28006AEE85 /* OrderShopViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -833,6 +838,9 @@
 				05A3D13C1EE0FFE8006AEE85 /* OrderShopDetailCell.h */,
 				05A3D13D1EE0FFE8006AEE85 /* OrderShopDetailCell.m */,
 				05A3D13E1EE0FFE8006AEE85 /* OrderShopDetailCell.xib */,
+				05F7A6291EE18DB400ADF118 /* OrderMonthlyButtom.h */,
+				05F7A62A1EE18DB400ADF118 /* OrderMonthlyButtom.m */,
+				05F7A62C1EE18DBF00ADF118 /* OrderMonthlyButtom.xib */,
 				05656AD21EE10D2D008E92A9 /* OrderShopButtom.h */,
 				05656AD31EE10D2D008E92A9 /* OrderShopButtom.m */,
 				05656AD51EE10D38008E92A9 /* OrderShopButtom.xib */,
@@ -1144,6 +1152,7 @@
 				19D52CAA1ECED4040072EE00 /* OrderViewController.xib in Resources */,
 				199E87001ECD8569004D8A37 /* OrderPaySuccessViewController.xib in Resources */,
 				19D52CA51ECEA1100072EE00 /* MineListCell.xib in Resources */,
+				05F7A62D1EE18DBF00ADF118 /* OrderMonthlyButtom.xib in Resources */,
 				19A2175B1ECFDB2000A5F7F8 /* ShopViewController.xib in Resources */,
 				19A217731ED0267B00A5F7F8 /* MonthlyServentListViewController.xib in Resources */,
 				05A3D1401EE0FFE8006AEE85 /* OrderShopDetailCell.xib in Resources */,
@@ -1263,6 +1272,7 @@
 				1978C5911ED66A9700C1ADFC /* SDWebImageManager.m in Sources */,
 				199E86F01ECD74ED004D8A37 /* ForgetPWViewController.m in Sources */,
 				05656AF51EE11336008E92A9 /* MASCompositeConstraint.m in Sources */,
+				05F7A62B1EE18DB400ADF118 /* OrderMonthlyButtom.m in Sources */,
 				056C02771EE016D50058D334 /* OrderPriceCell.m in Sources */,
 				05656B051EE11756008E92A9 /* OrderHourlyViewController.m in Sources */,
 				05656B091EE1316A008E92A9 /* OrderLabelCell.m in Sources */,

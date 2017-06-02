@@ -92,11 +92,9 @@
             cell.lineView.alpha = 1;
             cell.orderPriceTitleLabel.text = @"合计";
             cell.orderPriceLabel.text = @"￥210.00";
-
         }
         return cell;
     }
-
 
 //    OrderPriceCell *cell = [OrderPriceCell cellWithTableView:tableView];
 //    return cell;

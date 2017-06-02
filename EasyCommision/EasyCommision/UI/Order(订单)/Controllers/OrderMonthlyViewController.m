@@ -11,9 +11,12 @@
 #import "OrderSectionHeadCell.h"
 #import "Networks.h"
 #import "OrderPriceCell.h"
+#import "OrderMonthlyButtom.h"
+#import "Masonry.h"
 
 @interface OrderMonthlyViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *orderMonthlyTableView;
+@property (nonatomic,strong) OrderMonthlyButtom *orderMonthlyButtom;
 
 
 @end
@@ -29,6 +32,11 @@
 
     [self.view addSubview:self.orderMonthlyTableView];
 
+    [self.view addSubview:self.orderMonthlyButtom];
+    [self.orderMonthlyButtom mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.mas_equalTo(0);
+        make.height.mas_equalTo(60);
+    }];
 }
 
 #pragma mark - TableView
@@ -158,6 +166,8 @@
 
 
 
+
+
 - (UITableView *)orderMonthlyTableView
 {
     if (_orderMonthlyTableView == nil) {
@@ -173,6 +183,14 @@
         _orderMonthlyTableView.bounces = NO;
     }
     return _orderMonthlyTableView;
+}
+
+- (OrderMonthlyButtom *)orderMonthlyButtom
+{
+    if (_orderMonthlyButtom == nil) {
+        _orderMonthlyButtom =  [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([OrderMonthlyButtom class]) owner:nil options:nil] firstObject];
+    }
+    return _orderMonthlyButtom;
 }
 
 
