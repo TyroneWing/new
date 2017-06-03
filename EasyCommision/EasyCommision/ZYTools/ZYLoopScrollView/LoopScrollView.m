@@ -8,6 +8,7 @@
 
 #import "LoopScrollView.h"
 #import "UIImageView+WebCache.h"
+#import "Networks.h"
 
 @interface LoopScrollView ()<UIScrollViewDelegate>
 {
@@ -67,8 +68,8 @@
     
     UIImageView *view = _imageViewArray[index];
     view.image = image;
-    
 }
+
 -(void)setImageWithUrlString:(NSString *)urlString atIndex:(int)index
 {
     if(index<0 || index >_pageCount - 1)
@@ -118,7 +119,7 @@
     }
     
     //创建滚动视图
-    _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kWIN_WIDTH, kWIN_WIDTH/12.0*5)];
     [self addSubview:_scrollView];
     _scrollView.bounces = YES;
     _scrollView.pagingEnabled = YES;

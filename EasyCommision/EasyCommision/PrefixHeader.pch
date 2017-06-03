@@ -1,0 +1,74 @@
+//
+//  PrefixHeader.pch
+//  EasyCommision
+//
+//  Created by hunuo on 2017/6/2.
+//  Copyright © 2017年 yi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//---------------------------------------------------------fhc 开始--------------------------------------------
+#ifdef DEBUG
+
+#define FuLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+
+#else
+
+#define FuLog(...)
+
+#endif
+
+#if __OBJC__
+
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+
+//-------------------------------------------------------常用的宏---------------------------------
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define kWIDTH [UIScreen mainScreen].bounds.size.width
+#define kHEIGHT [UIScreen mainScreen].bounds.size.height
+//添加字符串删除线
+#define DeleteLineStr(attrStr) [[NSAttributedString alloc]initWithString:attrStr attributes:@{NSStrikethroughStyleAttributeName:@(NSUnderlineStyleSingle|NSUnderlinePatternSolid)}]
+
+//字符串是否为空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+//数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+//是否是空对象
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+//获取颜色   线颜色f2f2f4 灰色字体929292
+//UIColorFromRGB1(255,222,222);
+#define FHCRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define FHCRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+//UIColorFromRGB(0xffffff);
+#define FHCColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define TOPGREEN [UIColor colorWithRed:26/256.0 green:173/256.0 blue:25/256.0 alpha:1]
+//view的背景颜色
+#define ViewGrayColor       [UIColor colorWithRed:239/255.f green:239/255.f blue:239/255.f alpha:1]
+/** *  深灰字体 */
+#define FONT_DARK_GREY FHCColorFromRGB(0x333333)
+/** *  中灰字体 */
+#define FONT_MIDDLE_GREY FHCColorFromRGB(0x717171)
+/** *  浅灰字体 */
+#define FONT_LIGHT_GREY FHCColorFromRGB(0x545454)
+//提示字段
+#define HINT @"hint"
+#define NONETWORKMSG @"网络在开小差！"
+#define NOMOREDATA @"没有更多数据！"
+
+//-------------------------------------------------------常用的宏---------------------------------
+
+#endif
+
+//---------------------------------------------------------fhc 结束--------------------------------------------
+
+#endif /* PrefixHeader_pch */

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,9 +18,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGv-Q2-cFF" customClass="LoopScrollView">
                     <rect key="frame" x="0.0" y="0.0" width="361" height="151"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="hGv-Q2-cFF" secondAttribute="height" multiplier="361:151" id="k1l-G9-st8"/>
-                    </constraints>
                 </view>
             </subviews>
             <constraints>
@@ -30,7 +26,10 @@
                 <constraint firstItem="hGv-Q2-cFF" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="dCi-uG-XB1"/>
                 <constraint firstItem="hGv-Q2-cFF" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="lDh-Vg-IwR"/>
             </constraints>
-            <point key="canvasLocation" x="-528" y="49"/>
+            <connections>
+                <outlet property="loopscrollView" destination="hGv-Q2-cFF" id="aoh-JO-dn5"/>
+            </connections>
+            <point key="canvasLocation" x="-728" y="53"/>
         </collectionReusableView>
     </objects>
 </document>
